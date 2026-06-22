@@ -16,7 +16,7 @@ export default defineConfig({
 	root: '../',        // serve from presentations/
 	server: {
 		port: Number(process.env.npm_config_port || 8000),
-    	open: 'ytm2026/index.html',
+    	open: 'ytm2026/ytm2026.html',
 	},
 	build: {
 		target: ['es2015'],
