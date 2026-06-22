@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+	<title>reveal.js</title>
+
+	<link rel="stylesheet" href="../reveal.js/dist/reset.css" />
+	<link rel="stylesheet" href="../reveal.js/dist/reveal.css" />
+	<link rel="stylesheet" href="../reveal.js/dist/theme/beige.css" />
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="../reveal.js/dist/plugin/highlight/monokai.css" />
+
+	<link rel="stylesheet" type="text/css" href="https://tikzjax.com/v1/fonts.css">
+	<script src="https://tikzjax.com/v1/tikzjax.js"></script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section
+			data-markdown="slides.md"
+			>
+			</section>
+		</div>
+	</div>
+
+	<script src="../reveal.js/dist/reveal.js"></script>
+	<script src="../reveal.js/dist/plugin/notes.js"></script>
+	<script src="../reveal.js/dist/plugin/markdown.js"></script>
+	<script src="../reveal.js/dist/plugin/highlight.js"></script>
+
+	<script src="../reveal.js/dist/plugin/math.js"></script>
+	<script src="../reveal.js/dist/plugin/markdown.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
+
+			loop: true,
+
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX],
+
+			// The "normal" size of the presentation, aspect ratio will
+			// be preserved when the presentation is scaled to fit different
+			// resolutions. Can be specified using percentage units.
+			width: 1920,
+			height: 1200,
+
+			// Factor of the display size that should remain empty around
+			// the content
+			margin: 0.04,
+
+			// Bounds for smallest/largest possible scale to apply to content
+			minScale: 0.2,
+			maxScale: 2.0,
+		});
+	</script>
+	
+	<script type="module" src="js/torus.js"></script>
+	<script type="module" src="js/sphere-wedge.js"></script>
+</body>
+
+</html>
+
+<style>
+  /* Adjusts the overall height of the progress bar track */
+  .reveal .progress {
+    height: 0.5%;
+  }
+</style>

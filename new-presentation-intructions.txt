@@ -1,0 +1,19 @@
+1. Follow instructions at revealjs.com to install base reveal with npm and node.
+
+2. At vite.config.ts add
+
+root: '../',
+server: {
+		open: ytm2026/index.html'
+	},
+
+    plugins: [
+		{
+			name: 'watch-md',
+			handleHotUpdate({file, server}) {
+				if (file.endsWith('.md')) {
+					server.ws.send({ type: 'full-reload'})
+				}
+			},
+		}
+	],

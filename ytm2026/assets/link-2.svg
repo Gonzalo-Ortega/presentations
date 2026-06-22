@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="179.99023"
+   height="133.07617"
+   viewBox="0 0 179.99023 133.07617"
+   version="1.1"
+   id="SVGRoot"
+   sodipodi:docname="unlink filtration.svg"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview170"
+     pagecolor="#ffffff"
+     bordercolor="#111111"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:zoom="0.914906"
+     inkscape:cx="302.76334"
+     inkscape:cy="282.54269"
+     inkscape:window-width="1354"
+     inkscape:window-height="838"
+     inkscape:window-x="262"
+     inkscape:window-y="227"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer2" />
+  <defs
+     id="defs165">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath7503">
+      <path
+         id="path7505"
+         style="fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="M 151.17773,311.93555 V 433.88672 H 273.12891 V 311.93555 h -79.72657 c 1.15458,0.84921 2.25914,1.76336 3.33594,2.70898 1.36388,1.20408 2.61387,2.52714 3.87695,3.83399 0.51872,0.53604 0.26585,0.27615 0.75196,0.77734 3.32927,3.43258 -0.13753,6.79587 -3.4668,3.36328 -0.49066,-0.50588 -0.23777,-0.24572 -0.75977,-0.78516 -1.17231,-1.21292 -2.32799,-2.44266 -3.59179,-3.5625 -0.51555,-0.45406 -0.90738,-0.80892 -1.43945,-1.23828 -0.55562,-0.44833 -1.13733,-0.86374 -1.68946,-1.3164 -1.59416,-1.30701 -2.06646,-2.76552 -1.77734,-3.78125 z m 32.80665,0.91992 c 0.22158,5e-5 0.5355,0.0658 0.95898,0.21289 0.21534,0.0748 0.43401,0.13711 0.64453,0.22461 0.30549,0.1269 0.66525,0.39557 0.91211,0.58008 0.58161,0.4347 1.1042,0.94203 1.63086,1.43945 1.63831,1.66567 3.14039,3.45802 4.68555,5.20898 0.78516,0.8747 0.40585,0.45633 1.13476,1.25782 3.21734,3.53768 -0.35734,6.7881 -3.57422,3.25 -0.7591,-0.83491 -0.3645,-0.39771 -1.18359,-1.31055 -1.45054,-1.64382 -2.86258,-3.32564 -4.38672,-4.90234 -0.40225,-0.38341 -0.51405,-0.49981 -0.91016,-0.83789 -0.397,-0.33885 -0.46979,-0.3387 0.0996,-0.17188 4.15881,1.21839 -2.15395,-4.95171 -0.0117,-4.95117 z" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath7539">
+      <path
+         id="path7541"
+         style="fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 93.138672,300.81055 v 121.95117 h 77.878908 c -1.90056,-1.53198 -3.78558,-3.08418 -5.64649,-4.66406 -1.14414,-0.99689 -2.27857,-2.00449 -3.39062,-3.03711 -3.56184,-3.30744 -2.07682,-6.72133 0.88672,-6.67969 1.15964,0.0163 2.5461,0.56128 3.94531,1.84961 0.99976,0.92055 2.02102,1.82307 3.04688,2.7168 0.70407,0.59695 1.42665,1.17176 2.13671,1.76171 -0.0263,-0.22891 -0.11444,-0.51916 -0.16992,-0.77734 -0.92551,-1.0862 -0.93214,-1.57585 -0.42969,-1.75391 -0.49417,-1.71166 -0.96659,-3.32663 -0.0684,-3.28125 0.31221,0.0158 0.78861,0.22978 1.48633,0.70704 0.28541,0.19522 0.58088,0.37835 0.85743,0.58593 0.15429,0.11583 0.97207,0.84826 1.0957,0.95703 0.50583,0.44503 1.01347,0.88773 1.52148,1.33008 1.45989,-0.003 2.34727,-0.49042 1.09766,-2.53906 -0.0134,-0.022 -0.0603,-0.081 -0.0391,-0.0664 0.0589,0.0405 0.10365,0.0981 0.15625,0.14649 0.10881,0.10026 0.21794,0.19794 0.32617,0.29883 0.5565,0.51879 1.10137,1.04933 1.64258,1.58398 1.09803,1.11352 2.15917,2.26341 3.22851,3.4043 0.74303,0.7805 1.46893,1.57915 2.2461,2.32617 0.45354,0.44035 0.23661,0.2344 0.64843,0.61914 1.46381,1.36751 2.07696,2.76705 2.09571,3.94141 0.0769,0.0605 0.15358,0.12115 0.23047,0.18164 0.16343,0.1286 0.31724,0.25813 0.46289,0.38867 h 26.70507 V 300.81055 Z" />
+    </clipPath>
+  </defs>
+  <g
+     inkscape:label="Capa 1"
+     id="layer1"
+     style="display:none"
+     inkscape:export-filename="layer1.png"
+     inkscape:export-xdpi="96"
+     inkscape:export-ydpi="96"
+     inkscape:groupmode="layer"
+     transform="translate(-93.138672,-300.81055)">
+    <path
+       id="path234-4"
+       style="display:inline;fill:none;stroke:#62a0ea;stroke-width:5;stroke-linejoin:round"
+       d="m 378.77522,425.91385 a 58.475952,58.475952 0 0 1 -58.47595,58.47595 58.475952,58.475952 0 0 1 -58.47596,-58.47595 58.475952,58.475952 0 0 1 58.47596,-58.47595 58.475952,58.475952 0 0 1 58.47595,58.47595 z"
+       inkscape:export-filename="unlink.svg"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       id="path234-3"
+       style="display:inline;fill:none;stroke:#62a0ea;stroke-width:5;stroke-linejoin:round"
+       d="m 245.06807,424.36811 a 58.475952,58.475952 0 0 1 -58.47595,58.47595 58.475952,58.475952 0 0 1 -58.47596,-58.47595 58.475952,58.475952 0 0 1 58.47596,-58.47595 58.475952,58.475952 0 0 1 58.47595,58.47595 z" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Capa 2"
+     style="display:inline"
+     transform="translate(-93.138672,-300.81055)">
+    <path
+       id="path234-7-2"
+       style="display:inline;fill:none;stroke:#2ec27e;stroke-width:5;stroke-linejoin:round"
+       d="M 212.59015,361.7858 A 58.475952,58.475952 0 0 1 154.1142,420.26175 58.475952,58.475952 0 0 1 95.63824,361.7858 58.475952,58.475952 0 0 1 154.1142,303.30985 58.475952,58.475952 0 0 1 212.59015,361.7858 Z"
+       inkscape:export-filename=".\unlink-2.svg"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       clip-path="url(#clipPath7539)" />
+    <path
+       id="path234-7-2-9"
+       style="display:inline;fill:none;stroke:#2ec27e;stroke-width:5;stroke-linejoin:round"
+       d="m 270.62978,372.91156 a 58.475952,58.475952 0 0 1 -58.47595,58.47595 58.475952,58.475952 0 0 1 -58.47596,-58.47595 58.475952,58.475952 0 0 1 58.47596,-58.47595 58.475952,58.475952 0 0 1 58.47595,58.47595 z"
+       inkscape:export-filename=".\unlink-2.svg"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       clip-path="url(#clipPath7503)" />
+  </g>
+</svg>
