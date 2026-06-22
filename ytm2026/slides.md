@@ -2,7 +2,7 @@
 
 <!-- .slide: data-auto-animate -->
 # The persistent $ \pi_1 $
-## & The lower central quotients barcodes
+## & The lower central series barcodes
 
 #### Gonzalo Ortega Carpintero
 `gonzalo.ortega-carpintero@city.ac.uk`
@@ -378,6 +378,62 @@ Notes:
 
 *Naive computation*: Using the spanning tree algorithm.
 
+<img data-id="torus" width=600 src='assets/torus.svg'/>
+<div data-id="label">$$ T $$</div>
+
+---
+
+<!-- .slide: data-auto-animate -->
+<div style="display:flex; justify-content:center; gap:1em;">
+  <h3> Can $\pi_1$ be computed? </h3>
+  <h3><span style="color:#2EC27E">YES</span>*</h3>
+</div>
+<p>*We can compute a <span style="color:#2EC27E"><b>presentation</b></span> of the $\pi_1$ of a CW complex.
+
+*Naive computation*: Using the spanning tree algorithm.
+
+<img data-id="torus" width=500 src='assets/torus-cw.svg'/>
+<div data-id="label">$$ T $$</div>
+
+---
+
+<!-- .slide: data-auto-animate -->
+<div style="display:flex; justify-content:center; gap:1em;">
+  <h3> Can $\pi_1$ be computed? </h3>
+  <h3><span style="color:#2EC27E">YES</span>*</h3>
+</div>
+<p>*We can compute a <span style="color:#2EC27E"><b>presentation</b></span> of the $\pi_1$ of a CW complex.
+
+*Naive computation*: Using the spanning tree algorithm.
+
+<img data-id="torus" width=500 src='assets/tree-torus.svg'/>
+<div data-id="label">$$ T $$</div>
+
+---
+
+<!-- .slide: data-auto-animate -->
+<div style="display:flex; justify-content:center; gap:1em;">
+  <h3> Can $\pi_1$ be computed? </h3>
+  <h3><span style="color:#2EC27E">YES</span>*</h3>
+</div>
+<p>*We can compute a <span style="color:#2EC27E"><b>presentation</b></span> of the $\pi_1$ of a CW complex.
+
+*Naive computation*: Using the spanning tree algorithm.
+
+<img data-id="torus" width=500 src='assets/tree-torus.svg'/>
+<div data-id="label">$$ T \cong \langle e_2, e_4, e_5, e_7, e_8 \mid e_5, \ e_2^{-1} e_7, e_5^{-1}, \ e_7^{-1} e_4^{-1} e_2 e_8, \ e_8^{-1} e_4 \rangle$$</div>
+
+---
+
+<!-- .slide: data-auto-animate -->
+<div style="display:flex; justify-content:center; gap:1em;">
+  <h3> Can $\pi_1$ be computed? </h3>
+  <h3><span style="color:#2EC27E">YES</span>*</h3>
+</div>
+<p>*We can compute a <span style="color:#2EC27E"><b>presentation</b></span> of the $\pi_1$ of a CW complex.
+
+*Naive computation*: Using the spanning tree algorithm.
+
 *Efficient computation*: Using discrete Morse theory to obtain a reduced presentation.
 
 ---
@@ -391,7 +447,7 @@ Notes:
 
 *Efficient computation*: Using discrete Morse theory to obtain a reduced presentation.
 
->**Theorem (Forman, 1998)**: Suppose $ K $ is a regular CW complex with a discrete Morse function. Then $ K $ is homotopy equivalent to a CW complex with exactly one cell of dimension $ p $ for each critical simplex of dimension $ p $.
+>**Theorem (Forman, 1995; Chari, 2000)**: Suppose $ K $ is a regular CW complex with a discrete Morse function. Then $ K $ is homotopy equivalent to a CW complex with exactly one cell of dimension $ p $ for each critical simplex of dimension $ p $.
 
 ---
 
@@ -404,9 +460,66 @@ Notes:
 
 *Efficient computation*: Using discrete Morse theory to obtain a reduced presentation.
 
->**Theorem (Forman, 1998)**: Suppose $ K $ is a regular CW complex with a discrete Morse function. Then $ K $ is homotopy equivalent to a CW complex with exactly one cell of dimension $ p $ for each critical simplex of dimension $ p $.
+>**Theorem (Forman, 1995; Chari 2000)**: Suppose $ K $ is a regular CW complex with a discrete Morse function. Then $ K $ is homotopy equivalent to a CW complex with exactly one cell of dimension $ p $ for each critical simplex of dimension $ p $.
 
 >**Theorem (Fernández, 2024)**: A reduced presentation of $ \pi_1(K) $ can be computed with complexity $ \mathcal O (N^2) $, where $ N $ depends on the total number of cells in $ K $.
+
+---
+
+<!-- .slide: data-auto-animate -->
+<div style="display:flex; justify-content:center; gap:1em;">
+  <h3> Can $\pi_1$ be computed? </h3>
+  <h3><span style="color:#2EC27E">YES</span>*</h3>
+</div>
+<p>*We can compute a <span style="color:#2EC27E"><b>presentation</b></span> of the $\pi_1$ of a CW complex.
+
+*Efficient computation*: Using discrete Morse theory to obtain a reduced presentation.
+
+<img data-id="torus" height=500 src='assets/torus-cw.svg'/>
+<div data-id="label">$$ T $$</div>
+
+---
+
+<!-- .slide: data-auto-animate -->
+<div style="display:flex; justify-content:center; gap:1em;">
+  <h3> Can $\pi_1$ be computed? </h3>
+  <h3><span style="color:#2EC27E">YES</span>*</h3>
+</div>
+<p>*We can compute a <span style="color:#2EC27E"><b>presentation</b></span> of the $\pi_1$ of a CW complex.
+
+*Efficient computation*: Using discrete Morse theory to obtain a reduced presentation.
+
+<img data-id="torus" height=500 src='assets/tree-torus.svg'/>
+<div data-id="label">$$ T $$</div>
+
+
+---
+
+<!-- .slide: data-auto-animate -->
+<div style="display:flex; justify-content:center; gap:1em;">
+  <h3> Can $\pi_1$ be computed? </h3>
+  <h3><span style="color:#2EC27E">YES</span>*</h3>
+</div>
+<p>*We can compute a <span style="color:#2EC27E"><b>presentation</b></span> of the $\pi_1$ of a CW complex.
+
+*Efficient computation*: Using discrete Morse theory to obtain a reduced presentation.
+
+<img data-id="torus" height=500 src='assets/matching-torus-3.svg'/>
+<div data-id="label">$$ T $$</div>
+
+---
+
+<!-- .slide: data-auto-animate -->
+<div style="display:flex; justify-content:center; gap:1em;">
+  <h3> Can $\pi_1$ be computed? </h3>
+  <h3><span style="color:#2EC27E">YES</span>*</h3>
+</div>
+<p>*We can compute a <span style="color:#2EC27E"><b>presentation</b></span> of the $\pi_1$ of a CW complex.
+
+*Efficient computation*: Using discrete Morse theory to obtain a reduced presentation.
+
+<img data-id="torus" height=500 src='assets/matching-torus-3.svg'/>
+<div data-id="label">$$ T \cong \langle e_2, e_4 \mid e_2^{-1} e_4^{-1} e_2 e_4 \rangle$$</div>
 
 ---
 
@@ -522,7 +635,7 @@ $$
 
 *Efficient computation*: Make an single computation through all the filtration.
 
->**Theorem**: There exists an algorithm of complexity $ \mathcal O(N^2) $ that computes presentations of all $ \pi_1(K_\alpha) $ for all $ 1 \leq \alpha \leq n $, where $ N $ depends on the total number of cells in $K_n$.
+>**Theorem (O., Fernández, 2026)**: There exists an algorithm of complexity $ \mathcal O(N^2) $ that computes presentations of all $ \pi_1(K_\alpha) $ for all $ 1 \leq \alpha \leq n $, where $ N $ depends on the total number of cells in $K_n$.
 
 ---
 
@@ -1085,13 +1198,13 @@ can be seen as a graded abelian module.
     <span data-id="arrow2">$\rightarrow$</span>
     <img src='assets/unlink-1.svg'/>
   </div>
-  $$
-  \begin{align*}
-    \pi_1(\mathbb R^3 \setminus U_1) &= \langle u_1, u_2, u_3 \mid - \rangle \\
-    \pi_1(\mathbb R^3 \setminus U_2) &= \langle u_1, u_2 \mid - \rangle \\
-    \pi_1(\mathbb R^3 \setminus U_3) &= \langle u_1 \mid - \rangle \\
-  \end{align*}
-  $$
+    $$
+    \begin{align*}
+      \pi_1(\mathbb R^3 \setminus U_1) &= \langle u_1, u_2, u_3 \mid - \rangle \\
+      \pi_1(\mathbb R^3 \setminus U_2) &= \langle u_1, u_2 \mid - \rangle \\
+      \pi_1(\mathbb R^3 \setminus U_3) &= \langle u_1 \mid - \rangle \\
+    \end{align*}
+    $$
   </div>
   <div>
   <div style="display:flex; align-items:center; justify-content:center; gap:0.5em;">
@@ -1102,13 +1215,13 @@ can be seen as a graded abelian module.
     <span data-id="arrow2">$\rightarrow$</span>
     <img src='assets/link-1.svg'/>
   </div>
-  $$
-  \begin{align*}
-    \pi_1(\mathbb R^3 \setminus L_1) &= \langle l_1, l_2, l_3 \mid [l_1, l_2], [(l_1l_3), l_2] \rangle \\
-    \pi_1(\mathbb R^3 \setminus L_2) &= \langle l_1, l_2 \mid [l_1, l_2] \rangle \\
-    \pi_1(\mathbb R^3 \setminus L_3) &= \langle l_1 \mid - \rangle \\
-  \end{align*}
-  $$
+    $$
+    \begin{align*}
+      \pi_1(\mathbb R^3 \setminus L_1) &= \langle l_1, l_2, l_3 \mid [l_1, l_2], [l_1l_3, l_2] \rangle \\
+      \pi_1(\mathbb R^3 \setminus L_2) &= \langle l_1, l_2 \mid [l_1, l_2] \rangle \\
+      \pi_1(\mathbb R^3 \setminus L_3) &= \langle l_1 \mid - \rangle \\
+    \end{align*}
+    $$
   </div>
 </div>
 
@@ -1124,8 +1237,8 @@ can be seen as a graded abelian module.
 $$
 \begin{align*}
     \pi_1(\mathbb R^3 \setminus R_1) &= \langle r_1, r_2, r_3 \mid r_3r_2^{-1}r_3^{-1}r_1^{-1}r_3r_2r_3^{-1}r_2^{-1}r_1r_2, r_3r_2r_3^{-1}r_1r_3r_1^{-1}r_2^{-1}r_1r_3^{-1}r_1^{-1} \rangle \\
-    \pi_1(\mathbb R^3 \setminus R_2) &= \langle r_1, r_2 \mid - \rangle \ \
-    \pi_1(\mathbb R^3 \setminus R_3) = \langle r_1 \mid - \rangle \\
+    \pi_1(\mathbb R^3 \setminus R_2) &= \langle r_1, r_2 \mid - \rangle \\
+    \pi_1(\mathbb R^3 \setminus R_3) &= \langle r_1 \mid - \rangle \\
 \end{align*}
 $$
 </div>
