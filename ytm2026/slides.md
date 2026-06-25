@@ -1,8 +1,7 @@
 
-
 <!-- .slide: data-auto-animate -->
-# The persistent $ \pi_1 $
-## & The lower central series barcodes
+# Persistent <span style="text-transform:none; font-size: 1.4em;">$\pi_1$</span>
+## & Lower-central-series barcodes
 
 #### Gonzalo Ortega Carpintero
 `gonzalo.ortega-carpintero@city.ac.uk`
@@ -53,7 +52,11 @@ Notes:
     <figcaption data-id="s1">$X = S^2 \vee S^1 \vee S^1$</figcaption>
   </figure>
 </div>
+$$H_0(T) = \mathbb Z = H_0(X)$$
 <p data-id="h"> $$H_1(T) = \mathbb Z \oplus \mathbb Z = H_1(X)$$
+$$H_2(T) = \mathbb Z = H_2(X)$$
+$$H_n(T) = 0 = H_n(X), $$
+$$ \ n \geq 3 $$
 
 ---
 
@@ -182,8 +185,54 @@ Notes:
       $$
       \begin{array}{ccccc}
       T_1 & \xrightarrow{} & T_2 & \xrightarrow{} & T_3\\
-      \downarrow & & \downarrow &  & \downarrow \\
-      H_1(T_1) & \xrightarrow{} & H_1(T_2) & \xrightarrow{} & H_1(T_3)\\
+      \downarrow \scriptsize{H_1} & & \downarrow \scriptsize{H_1} &  & \downarrow \scriptsize{H_1} \\
+      \mathbb Z & \xrightarrow{} & \mathbb Z & \xrightarrow{} & \mathbb Z \oplus \mathbb Z\\
+      \end{array}
+      $$
+    </div>
+  </div>
+
+  <div>
+    <div style="display:flex; align-items:center; justify-content:center; gap:0.1em; font-size:0.75em;">
+      <span data-id="x">$\mathcal X$: </span>
+      <img src='assets/fil-1.svg'/>
+      <span data-id="a3">$\rightarrow$</span>
+      <img src='assets/fil-2.svg' style="width:5em;"/>
+      <span data-id="a4">$\rightarrow$</span>
+      <img data-id="sphere" src='assets/sphere.svg' style="width:5em;"/>
+    </div>
+    <div data-id="d2">
+      $$
+      \begin{array}{ccccc}
+      X_1 & \xrightarrow{} & X_2 & \xrightarrow{} & X_3\\
+      \downarrow \scriptsize{H_1} & & \downarrow \scriptsize{H_1} &  & \downarrow \scriptsize{H_1} \\
+      \mathbb Z & \xrightarrow{} & \mathbb Z & \xrightarrow{} & \mathbb Z \oplus \mathbb Z\\
+      \end{array}
+      $$
+    </div>
+  </div>
+</div>
+
+---
+<!-- .slide: data-auto-animate -->
+### The limitations of persistent $H_*$
+
+<div style="display:flex; justify-content:center; align-items:flex-end; gap:5em;">
+  <div>
+    <div style="display:flex; align-items:center; justify-content:center; gap:0.1em; font-size:0.75em;">
+      <span data-id="t">$\mathcal T$: </span>
+      <img src='assets/fil-1.svg'/>
+      <span data-id="a1">$\rightarrow$</span>
+      <img src='assets/fil-2.svg' style="width:5em;"/>
+      <span data-id="a2">$\rightarrow$</span>
+      <img data-id="torus" src='assets/torus.svg' style="width:5em;"/>
+    </div>
+    <div data-id="d1">
+      $$
+      \begin{array}{ccccc}
+      T_1 & \xrightarrow{} & T_2 & \xrightarrow{} & T_3\\
+      \downarrow \scriptsize{H_1} & & \downarrow \scriptsize{H_1} &  & \downarrow \scriptsize{H_1} \\
+      \mathbb Z & \xrightarrow{} & \mathbb Z & \xrightarrow{} & \mathbb Z \oplus \mathbb Z\\
       \end{array}
       $$
       </div>
@@ -203,8 +252,8 @@ Notes:
       $$
       \begin{array}{ccccc}
       X_1 & \xrightarrow{} & X_2 & \xrightarrow{} & X_3\\
-      \downarrow & & \downarrow &  & \downarrow \\
-      H_1(X_1) & \xrightarrow{} & H_1(X_2) & \xrightarrow{} & H_1(X_3)\\
+      \downarrow \scriptsize{H_1} & & \downarrow \scriptsize{H_1} &  & \downarrow \scriptsize{H_1} \\
+      \mathbb Z & \xrightarrow{} & \mathbb Z & \xrightarrow{} & \mathbb Z \oplus \mathbb Z\\
       \end{array}
       $$
     </div>
@@ -213,6 +262,8 @@ Notes:
 </div>
 <p data-id="ph">$$ PH_1(\mathcal T) = PH_1(\mathcal X)$$
 
+All barcodes coincide.
+
 ---
 
 <!-- .slide: data-auto-animate -->
@@ -309,7 +360,7 @@ Notes:
   </div>
 </div>
 
-### What would we like to do?
+### Persistent <span style="text-transform:none; font-size: 1.4em;">$\pi_1$</span>
 
 <div style="display:flex; justify-content:center; align-items:flex-end; gap:5em;">
   <div data-id="d1">
@@ -333,48 +384,52 @@ Notes:
   </div>
 </div>
 
----
-
-<!-- .slide: data-auto-animate -->
-<div style="display:flex; justify-content:center; align-items:baseline; gap:1em;">
-  <h3> Can $\pi_1$ be computed? </h3>
-</div>
+**Convention**: All spaces are path-conected and contain a common base point.
 
 ---
 
 <!-- .slide: data-auto-animate -->
 <div style="display:flex; justify-content:center; align-items:baseline; gap:1em;">
-  <h3> Can $\pi_1$ be computed? </h3>
+  <h3> Can <span style="text-transform:none; font-size: 1.4em;">$\pi_1$</span> be algorithmically computed? </h3>
+</div>
+
+---
+
+<!-- .slide: data-auto-animate -->
+<div style="display:flex; justify-content:center; align-items:baseline; gap:1em;">
+  <h3> Can <span style="text-transform:none; font-size: 1.4em;">$\pi_1$</span> be algorithmically computed? </h3>
   <h3><span style="color:#2EC27E">YES</span>*</h3>
 </div>
 ---
 
 <!-- .slide: data-auto-animate -->
-<div style="display:flex; justify-content:center; gap:1em;">
-  <h3> Can $\pi_1$ be computed? </h3>
-  <h3><span style="color:#2EC27E">YES</span>*</h3>
+<div style="display:flex; justify-content:center; align-items:baseline; gap:1em;">
+  <h3> Can <span style="text-transform:none; font-size: 1.4em;">$\pi_1$</span> be algorithmically computed? </h3>
+  <h3><span style="color:#2EC27E;">YES</span>*</h3>
 </div>
-<p>*We can compute a <span style="color:#2EC27E"><b>presentation</b></span> of the $\pi_1$ of a CW complex.
+<p>*We can compute a <span style="color:#2EC27E"><b>presentation</b></span> of $\pi_1$ of a CW complex.
+
+*(All CW complexes will be **finite** and **path-connected** in this presentation.)*
 
 ---
 
 <!-- .slide: data-auto-animate -->
-<div style="display:flex; justify-content:center; gap:1em;">
-  <h3> Can $\pi_1$ be computed? </h3>
+<div style="display:flex; justify-content:center; align-items:baseline; gap:1em;">
+  <h3> Can <span style="text-transform:none; font-size: 1.4em;">$\pi_1$</span> be algorithmically computed? </h3>
   <h3><span style="color:#2EC27E">YES</span>*</h3>
 </div>
-<p>*We can compute a <span style="color:#2EC27E"><b>presentation</b></span> of the $\pi_1$ of a CW complex.
+<p>*We can compute a <span style="color:#2EC27E"><b>presentation</b></span> of $\pi_1$ of a CW complex.
 
 *Naive computation*: Using the spanning tree algorithm.
 
 ---
 
 <!-- .slide: data-auto-animate -->
-<div style="display:flex; justify-content:center; gap:1em;">
-  <h3> Can $\pi_1$ be computed? </h3>
+<div style="display:flex; justify-content:center; align-items:baseline; gap:1em;">
+  <h3> Can <span style="text-transform:none; font-size: 1.4em;">$\pi_1$</span> be algorithmically computed? </h3>
   <h3><span style="color:#2EC27E">YES</span>*</h3>
 </div>
-<p>*We can compute a <span style="color:#2EC27E"><b>presentation</b></span> of the $\pi_1$ of a CW complex.
+<p>*We can compute a <span style="color:#2EC27E"><b>presentation</b></span> of $\pi_1$ of a CW complex.
 
 *Naive computation*: Using the spanning tree algorithm.
 
@@ -384,11 +439,11 @@ Notes:
 ---
 
 <!-- .slide: data-auto-animate -->
-<div style="display:flex; justify-content:center; gap:1em;">
-  <h3> Can $\pi_1$ be computed? </h3>
+<div style="display:flex; justify-content:center; align-items:baseline; gap:1em;">
+  <h3> Can <span style="text-transform:none; font-size: 1.4em;">$\pi_1$</span> be algorithmically computed? </h3>
   <h3><span style="color:#2EC27E">YES</span>*</h3>
 </div>
-<p>*We can compute a <span style="color:#2EC27E"><b>presentation</b></span> of the $\pi_1$ of a CW complex.
+<p>*We can compute a <span style="color:#2EC27E"><b>presentation</b></span> of $\pi_1$ of a CW complex.
 
 *Naive computation*: Using the spanning tree algorithm.
 
@@ -398,11 +453,11 @@ Notes:
 ---
 
 <!-- .slide: data-auto-animate -->
-<div style="display:flex; justify-content:center; gap:1em;">
-  <h3> Can $\pi_1$ be computed? </h3>
+<div style="display:flex; justify-content:center; align-items:baseline; gap:1em;">
+  <h3> Can <span style="text-transform:none; font-size: 1.4em;">$\pi_1$</span> be algorithmically computed? </h3>
   <h3><span style="color:#2EC27E">YES</span>*</h3>
 </div>
-<p>*We can compute a <span style="color:#2EC27E"><b>presentation</b></span> of the $\pi_1$ of a CW complex.
+<p>*We can compute a <span style="color:#2EC27E"><b>presentation</b></span> of $\pi_1$ of a CW complex.
 
 *Naive computation*: Using the spanning tree algorithm.
 
@@ -412,11 +467,11 @@ Notes:
 ---
 
 <!-- .slide: data-auto-animate -->
-<div style="display:flex; justify-content:center; gap:1em;">
-  <h3> Can $\pi_1$ be computed? </h3>
+<div style="display:flex; justify-content:center; align-items:baseline; gap:1em;">
+  <h3> Can <span style="text-transform:none; font-size: 1.4em;">$\pi_1$</span> be algorithmically computed? </h3>
   <h3><span style="color:#2EC27E">YES</span>*</h3>
 </div>
-<p>*We can compute a <span style="color:#2EC27E"><b>presentation</b></span> of the $\pi_1$ of a CW complex.
+<p>*We can compute a <span style="color:#2EC27E"><b>presentation</b></span> of $\pi_1$ of a CW complex.
 
 *Naive computation*: Using the spanning tree algorithm.
 
@@ -426,11 +481,11 @@ Notes:
 ---
 
 <!-- .slide: data-auto-animate -->
-<div style="display:flex; justify-content:center; gap:1em;">
-  <h3> Can $\pi_1$ be computed? </h3>
+<div style="display:flex; justify-content:center;  align-items:baseline; gap:1em;">
+  <h3> Can <span style="text-transform:none; font-size: 1.4em;">$\pi_1$</span> be algorithmically computed? </h3>
   <h3><span style="color:#2EC27E">YES</span>*</h3>
 </div>
-<p>*We can compute a <span style="color:#2EC27E"><b>presentation</b></span> of the $\pi_1$ of a CW complex.
+<p>*We can compute a <span style="color:#2EC27E"><b>presentation</b></span> of $\pi_1$ of a CW complex.
 
 *Naive computation*: Using the spanning tree algorithm.
 
@@ -439,39 +494,45 @@ Notes:
 ---
 
 <!-- .slide: data-auto-animate -->
-<div style="display:flex; justify-content:center; gap:1em;">
-  <h3> Can $\pi_1$ be computed? </h3>
+<div style="display:flex; justify-content:center; align-items:baseline; gap:1em;">
+  <h3> Can <span style="text-transform:none; font-size: 1.4em;">$\pi_1$</span> be algorithmically computed? </h3>
   <h3><span style="color:#2EC27E">YES</span>*</h3>
 </div>
-<p>*We can compute a <span style="color:#2EC27E"><b>presentation</b></span> of the $\pi_1$ of a CW complex.
+<p>*We can compute a <span style="color:#2EC27E"><b>presentation</b></span> of $\pi_1$ of a CW complex.
 
 *Efficient computation*: Using discrete Morse theory to obtain a reduced presentation.
 
->**Theorem (Forman, 1995; Chari, 2000)**: Suppose $ K $ is a regular CW complex with a discrete Morse function. Then $ K $ is homotopy equivalent to a CW complex with exactly one cell of dimension $ p $ for each critical simplex of dimension $ p $.
+Let $ K $ be a regular CW complex and let $ M $ be an acyclic matc  hing on the cells of K.
+
+>**Theorem (Forman, 1995; Chari 2000)**: $ K $ is homotopy equivalent to a CW complex with exactly one cell of dimension $ p $ for each critical (ie., unmatched) cell of dimension $ p $.
 
 ---
 
 <!-- .slide: data-auto-animate -->
-<div style="display:flex; justify-content:center; gap:1em;">
-  <h3> Can $\pi_1$ be computed? </h3>
+<div style="display:flex; justify-content:center; align-items:baseline; gap:1em;">
+  <h3> Can <span style="text-transform:none; font-size: 1.4em;">$\pi_1$</span> be algorithmically computed? </h3>
   <h3><span style="color:#2EC27E">YES</span>*</h3>
 </div>
-<p>*We can compute a <span style="color:#2EC27E"><b>presentation</b></span> of the $\pi_1$ of a CW complex.
+<p>*We can compute a <span style="color:#2EC27E"><b>presentation</b></span> of $\pi_1$ of a CW complex.
 
 *Efficient computation*: Using discrete Morse theory to obtain a reduced presentation.
 
->**Theorem (Forman, 1995; Chari 2000)**: Suppose $ K $ is a regular CW complex with a discrete Morse function. Then $ K $ is homotopy equivalent to a CW complex with exactly one cell of dimension $ p $ for each critical simplex of dimension $ p $.
+Let $ K $ be a regular CW complex and let $ M $ be an acyclic matching on the cells of K.
 
->**Theorem (Fernández, 2024)**: A reduced presentation of $ \pi_1(K) $ can be computed with complexity $ \mathcal O (N^2) $, where $ N $ depends on the total number of cells in $ K $.
+>**Theorem (Fernández, 2024)**: A presentation $\mathcal P = \langle X \mid R \rangle $ of $ \pi_1(K) $ with
+$$\\# X = \\# 1\text{-dim critical cells}$$
+$$\\# R = \\# 2\text{-dim critical cells}$$
+can be computed with complexity $ \mathcal O (N^2) $, where
+$$N = \\# \text{cells in 2-skeleton of } K.$$
 
 ---
 
 <!-- .slide: data-auto-animate -->
-<div style="display:flex; justify-content:center; gap:1em;">
-  <h3> Can $\pi_1$ be computed? </h3>
+<div style="display:flex; justify-content:center; align-items:baseline; gap:1em;">
+  <h3> Can <span style="text-transform:none; font-size: 1.4em;">$\pi_1$</span> be algorithmically computed? </h3>
   <h3><span style="color:#2EC27E">YES</span>*</h3>
 </div>
-<p>*We can compute a <span style="color:#2EC27E"><b>presentation</b></span> of the $\pi_1$ of a CW complex.
+<p>*We can compute a <span style="color:#2EC27E"><b>presentation</b></span> of $\pi_1$ of a CW complex.
 
 *Efficient computation*: Using discrete Morse theory to obtain a reduced presentation.
 
@@ -481,11 +542,11 @@ Notes:
 ---
 
 <!-- .slide: data-auto-animate -->
-<div style="display:flex; justify-content:center; gap:1em;">
-  <h3> Can $\pi_1$ be computed? </h3>
+<div style="display:flex; justify-content:center; align-items:baseline; gap:1em;">
+  <h3> Can <span style="text-transform:none; font-size: 1.4em;">$\pi_1$</span> be algorithmically computed? </h3>
   <h3><span style="color:#2EC27E">YES</span>*</h3>
 </div>
-<p>*We can compute a <span style="color:#2EC27E"><b>presentation</b></span> of the $\pi_1$ of a CW complex.
+<p>*We can compute a <span style="color:#2EC27E"><b>presentation</b></span> of $\pi_1$ of a CW complex.
 
 *Efficient computation*: Using discrete Morse theory to obtain a reduced presentation.
 
@@ -496,11 +557,11 @@ Notes:
 ---
 
 <!-- .slide: data-auto-animate -->
-<div style="display:flex; justify-content:center; gap:1em;">
-  <h3> Can $\pi_1$ be computed? </h3>
+<div style="display:flex; justify-content:center; align-items:baseline; gap:1em;">
+  <h3> Can <span style="text-transform:none; font-size: 1.4em;">$\pi_1$</span> be algorithmically computed? </h3>
   <h3><span style="color:#2EC27E">YES</span>*</h3>
 </div>
-<p>*We can compute a <span style="color:#2EC27E"><b>presentation</b></span> of the $\pi_1$ of a CW complex.
+<p>*We can compute a <span style="color:#2EC27E"><b>presentation</b></span> of $\pi_1$ of a CW complex.
 
 *Efficient computation*: Using discrete Morse theory to obtain a reduced presentation.
 
@@ -510,11 +571,11 @@ Notes:
 ---
 
 <!-- .slide: data-auto-animate -->
-<div style="display:flex; justify-content:center; gap:1em;">
-  <h3> Can $\pi_1$ be computed? </h3>
+<div style="display:flex; justify-content:center; align-items:baseline; gap:1em;">
+  <h3> Can <span style="text-transform:none; font-size: 1.4em;">$\pi_1$</span> be algorithmically computed? </h3>
   <h3><span style="color:#2EC27E">YES</span>*</h3>
 </div>
-<p>*We can compute a <span style="color:#2EC27E"><b>presentation</b></span> of the $\pi_1$ of a CW complex.
+<p>*We can compute a <span style="color:#2EC27E"><b>presentation</b></span> of $\pi_1$ of a CW complex.
 
 *Efficient computation*: Using discrete Morse theory to obtain a reduced presentation.
 
@@ -524,53 +585,54 @@ Notes:
 ---
 
 <!-- .slide: data-auto-animate -->
-<div style="display:flex; justify-content:center; gap:1em;">
-  <h3> Can $\pi_1$ be computed? </h3>
+<div style="display:flex; justify-content:center; align-items:baseline; gap:1em;">
+  <h3> Can <span style="text-transform:none; font-size: 1.4em;">$\pi_1$</span> be algorithmically computed? </h3>
   <h3><span style="color:#2EC27E">YES</span>*</h3>
 </div>
 
-<div style="display:flex; justify-content:center; gap:1em;">
-  <h3> Can $\pi_1$ be computed <u>over a filtration</u>? </h3>
+<div style="display:flex; justify-content:center; align-items:baseline; gap:1em;">
+  <h3> Can <span style="text-transform:none; font-size: 1.4em;">$\pi_1$</span> be computed <u>over a filtration</u>? </h3>
 </div>
 
 ---
 
 <!-- .slide: data-auto-animate -->
-<div style="display:flex; justify-content:center; gap:1em;">
-  <h3> Can $\pi_1$ be computed? </h3>
+<div style="display:flex; justify-content:center; align-items:baseline; gap:1em;">
+  <h3> Can <span style="text-transform:none; font-size: 1.4em;">$\pi_1$</span> be algorithmically computed? </h3>
   <h3><span style="color:#2EC27E">YES</span>*</h3>
 </div>
 
-<div style="display:flex; justify-content:center; gap:1em;">
-  <h3> Can <u>persistent</u> $\pi_1$ be computed? </h3>
+<div style="display:flex; justify-content:center; align-items:baseline; gap:1em;">
+  <h3> Can <u>persistent</u> <span style="text-transform:none; font-size: 1.4em;">$\pi_1$</span> be computed? </h3>
 </div>
 
 ---
 
 <!-- .slide: data-auto-animate -->
-<div style="display:flex; justify-content:center; gap:1em;">
-  <h3> Can $\pi_1$ be computed? </h3>
+<div style="display:flex; justify-content:center; align-items:baseline; gap:1em;">
+  <h3> Can <span style="text-transform:none; font-size: 1.4em;">$\pi_1$</span> be algorithmically computed? </h3>
   <h3><span style="color:#2EC27E">YES</span>*</h3>
 </div>
 
-<div style="display:flex; justify-content:center; gap:1em;">
-  <h3> Can <u>persistent</u> $\pi_1$ be computed? </h3>
+<div style="display:flex; justify-content:center; align-items:baseline; gap:1em;">
+  <h3> Can <u>persistent</u> <span style="text-transform:none; font-size: 1.4em;">$\pi_1$</span> be computed? </h3>
   <h3><span style="color:#2EC27E">YES</span>*</h3>
 </div>
 
 ---
 
 <!-- .slide: data-auto-animate -->
-<div style="display:flex; justify-content:center; gap:1em;">
-  <h3> Can $\pi_1$ be computed? </h3>
+<div style="display:flex; justify-content:center; align-items:baseline; gap:1em;">
+  <h3> Can <span style="text-transform:none; font-size: 1.4em;">$\pi_1$</span> be algorithmically computed? </h3>
   <h3><span style="color:#2EC27E">YES</span>*</h3>
 </div>
 
-<div style="display:flex; justify-content:center; gap:1em;">
-  <h3> Can <u>persistent</u> $\pi_1$ be computed? </h3>
+<div style="display:flex; justify-content:center; align-items:baseline; gap:1em;">
+  <h3> Can <u>persistent</u> <span style="text-transform:none; font-size: 1.4em;">$\pi_1$</span> be computed? </h3>
   <h3><span style="color:#2EC27E">YES</span>*</h3>
 </div>
 
+Let $ K_\bullet $ be a path-connected based filtration of finite CW-complexes.
 <div data-id="d1">
 $$
 \begin{array}{ccccccc}
@@ -586,16 +648,17 @@ $$
 ---
 
 <!-- .slide: data-auto-animate -->
-<div style="display:flex; justify-content:center; gap:1em;">
-  <h3> Can $\pi_1$ be computed? </h3>
+<div style="display:flex; justify-content:center; align-items:baseline; gap:1em;">
+  <h3> Can <span style="text-transform:none; font-size: 1.4em;">$\pi_1$</span> be algorithmically computed? </h3>
   <h3><span style="color:#2EC27E">YES</span>*</h3>
 </div>
 
-<div style="display:flex; justify-content:center; gap:1em;">
-  <h3> Can <u>persistent</u> $\pi_1$ be computed? </h3>
+<div style="display:flex; justify-content:center; align-items:baseline; gap:1em;">
+  <h3> Can <u>persistent</u> <span style="text-transform:none; font-size: 1.4em;">$\pi_1$</span> be computed? </h3>
   <h3><span style="color:#2EC27E">YES</span>*</h3>
 </div>
 
+Let $ K_\bullet $ be a path-connected based filtration of finite CW-complexes.
 <div data-id="d1">
 $$
 \begin{array}{ccccccc}
@@ -608,45 +671,126 @@ $$
 
 *Naive computation*: Compute $ \pi_1 $ presentations independently over every element in the filtration.
 
-*Efficient computation*: Make an single computation through all the filtration.
+*Efficient computation*: Perform a single computation over the whole filtration.
 
 ---
 
 <!-- .slide: data-auto-animate -->
-<div style="display:flex; justify-content:center; gap:1em;">
-  <h3> Can $\pi_1$ be computed? </h3>
+<div style="display:flex; justify-content:center; align-items:baseline; gap:1em;">
+  <h3> Can <span style="text-transform:none; font-size: 1.4em;">$\pi_1$</span> be algorithmically computed? </h3>
   <h3><span style="color:#2EC27E">YES</span>*</h3>
 </div>
 
-<div style="display:flex; justify-content:center; gap:1em;">
-  <h3> Can <u>persistent</u> $\pi_1$ be computed? </h3>
+<div style="display:flex; justify-content:center; align-items:baseline; gap:1em;">
+  <h3> Can <u>persistent</u> <span style="text-transform:none; font-size: 1.4em;">$\pi_1$</span> be computed? </h3>
   <h3><span style="color:#2EC27E">YES</span>*</h3>
 </div>
+
+*Efficient computation*: Perform a single computation over the whole filtration.
+
+<blockquote>
+<b>Theorem (Fernández, O., 2026)</b>: Let $ M_\bullet $ be an acyclic matching over $K_\bullet$. Presentations $ \mathcal P_i = \langle X_i \mid R_i \rangle $ of $ \pi_1(K_i) $ with
 
 <div data-id="d1">
 $$
-\begin{array}{ccccccc}
-K_1 & \xrightarrow{} & K_2 & \xrightarrow{} & \dots \xrightarrow{} & K_n\\
-\downarrow & & \downarrow &  &   & \downarrow\\
-\pi_1(K_1) & \xrightarrow{} & \pi_1(K_2) & \xrightarrow{} & \dots \xrightarrow{} & \pi_1(K_n)\\
+\begin{array}{c}
+\# X_i = \# 1\text{-dim critical cells of } K_i, \\
+\#R_i = \# 2\text{-dim critical cells of } K_i \\
 \end{array}
 $$
 </div>
 
-*Efficient computation*: Make an single computation through all the filtration.
-
->**Theorem (O., Fernández, 2026)**: There exists an algorithm of complexity $ \mathcal O(N^2) $ that computes presentations of all $ \pi_1(K_\alpha) $ for all $ 1 \leq \alpha \leq n $, where $ N $ depends on the total number of cells in $K_n$.
+and morphisms $ \psi_{i\to j}: \mathcal P_i \to \mathcal P_j $ such that the following comutes 
+<div data-id="d1">
+$$
+\begin{array}{ccc}
+K_i & \hookrightarrow{} & K_j \\
+\downarrow & & \downarrow \\
+\mathcal P_i & \xrightarrow{\psi_{i\to j}} & \mathcal P_j\\
+\end{array}
+$$
+</div>
+can be computed in $ \mathcal O(N^2) $ where $ N $ is the $\#$ of cells in $K^{(2)}$.
+</blockquote>
 
 ---
 
 <!-- .slide: data-auto-animate -->
-<div style="display:flex; justify-content:center; gap:1em;">
-  <h3> Can $\pi_1$ be computed? </h3>
+<div style="display:flex; justify-content:center; align-items:baseline; gap:1em;">
+  <h3> Can <span style="text-transform:none; font-size: 1.4em;">$\pi_1$</span> be algorithmically computed? </h3>
   <h3><span style="color:#2EC27E">YES</span>*</h3>
 </div>
 
-<div style="display:flex; justify-content:center; gap:1em;">
-  <h3> Can <u>persistent</u> $\pi_1$ be computed? </h3>
+<div style="display:flex; justify-content:center; align-items:baseline; gap:1em;">
+  <h3> Can <u>persistent</u> <span style="text-transform:none; font-size: 1.4em;">$\pi_1$</span> be computed? </h3>
+  <h3><span style="color:#2EC27E">YES</span>*</h3>
+</div>
+
+*Efficient computation*: Perform a single computation over the whole filtration.
+
+**SAGE Math implementation**
+
+<pre><code>
+    def filtrated_fundamental_group(self, fil, verbose = True):
+        S = set()
+        R = []
+        filtrated_fundamental_group = []
+        maps = [[None] * (fil+1) for _ in range(len(self.cells_lists[1]))]
+
+        for f in range(0, fil+1):
+            
+            for cell in self.filtration_unmatched_2_cells[f]:
+                R.append(cell.boundary_cells)
+
+            for cell in self.filtration_matched_1_cells_with_0_cells[f]:
+                cell.equivalence = '1'
+                maps[cell.count][f] = 1
+
+            for cell in self.filtration_matched_1_cells_with_2_cells[f]:
+                gens = cell.matched.boundary_cells[:]
+                idx = next((i for i, gen in enumerate(gens) if gen[0].name == cell.name), None)
+                if idx is not None:
+                    w1 = gens[:idx]
+                    w2 = gens[idx+1:]
+                    (_, sign) = gens[idx]
+                    x = self._invert_word(w1) + self._invert_word(w2)
+                    if sign == 1:
+                        cell.equivalence = x
+                    else: 
+                        cell.equivalence = self._invert_word(x)
+
+                maps[cell.count][f] = list(self._iter_flatten(cell.equivalence))
+
+            for cell in set(self.filtration_unmatched_1_cells[f]):
+                S.add(cell)
+                maps[cell.count][f] = cell.name
+                
+            S = set([x for x in S if not isinstance(x.equivalence, list)])
+            R = [list(self._iter_flatten(item)) for item in R]
+
+            F = FreeGroup(names=S)
+            gens = dict(zip([str(s) for s in S], F.gens()))
+            relations = [
+                prod(gens[str(e)]**Integer(sign) for e, sign in rel)
+                for rel in R
+            ]
+            G = F / relations
+            filtrated_fundamental_group.append(G)
+
+            if verbose:
+                print(str(f) + ': ' + str(G))
+</code></pre>
+
+---
+
+<!-- .slide: data-auto-animate -->
+<div style="display:flex; justify-content:center; align-items:baseline; gap:1em;">
+  <h3> Can <span style="text-transform:none; font-size: 1.4em;">$\pi_1$</span> be algorithmically computed? </h3>
+  <h3><span style="color:#2EC27E">YES</span>*</h3>
+</div>
+
+<div style="display:flex; justify-content:center; align-items:baseline; gap:1em;">
+  <h3> Can <u>persistent</u> <span style="text-transform:none; font-size: 1.4em;">$\pi_1$</span> be computed? </h3>
   <h3><span style="color:#2EC27E">YES</span>*</h3>
 </div>
 
@@ -662,13 +806,13 @@ $$
 ---
 
 <!-- .slide: data-auto-animate -->
-<div style="display:flex; justify-content:center; gap:1em;">
-  <h3> Can $\pi_1$ be computed? </h3>
+<div style="display:flex; justify-content:center; align-items:baseline; gap:1em;">
+  <h3> Can <span style="text-transform:none; font-size: 1.4em;">$\pi_1$</span> be algorithmically computed? </h3>
   <h3><span style="color:#2EC27E">YES</span>*</h3>
 </div>
 
-<div style="display:flex; justify-content:center; gap:1em;">
-  <h3> Can <u>persistent</u> $\pi_1$ be computed? </h3>
+<div style="display:flex; justify-content:center; align-items:baseline; gap:1em;">
+  <h3> Can <u>persistent</u> <span style="text-transform:none; font-size: 1.4em;">$\pi_1$</span> be computed? </h3>
   <h3><span style="color:#2EC27E">YES</span>*</h3>
 </div>
 
@@ -683,13 +827,13 @@ $$
 ---
 
 <!-- .slide: data-auto-animate -->
-<div style="display:flex; justify-content:center; gap:1em;">
-  <h3> Can $\pi_1$ be computed? </h3>
+<div style="display:flex; justify-content:center; align-items:baseline; gap:1em;">
+  <h3> Can <span style="text-transform:none; font-size: 1.4em;">$\pi_1$</span> be algorithmically computed? </h3>
   <h3><span style="color:#2EC27E">YES</span>*</h3>
 </div>
 
-<div style="display:flex; justify-content:center; gap:1em;">
-  <h3> Can <u>persistent</u> $\pi_1$ be computed? </h3>
+<div style="display:flex; justify-content:center; align-items:baseline; gap:1em;">
+  <h3> Can <u>persistent</u> <span style="text-transform:none; font-size: 1.4em;">$\pi_1$</span> be computed? </h3>
   <h3><span style="color:#2EC27E">YES</span>*</h3>
 </div>
 
@@ -719,13 +863,13 @@ $$
 ---
 
 <!-- .slide: data-auto-animate -->
-<div style="display:flex; justify-content:center; gap:1em;">
-  <h3> Can $\pi_1$ be computed? </h3>
+<div style="display:flex; justify-content:center; align-items:baseline; gap:1em;">
+  <h3> Can <span style="text-transform:none; font-size: 1.4em;">$\pi_1$</span> be algorithmically computed? </h3>
   <h3><span style="color:#2EC27E">YES</span>*</h3>
 </div>
 
-<div style="display:flex; justify-content:center; gap:1em;">
-  <h3> Can <u>persistent</u> $\pi_1$ be computed? </h3>
+<div style="display:flex; justify-content:center; align-items:baseline; gap:1em;">
+  <h3> Can <u>persistent</u> <span style="text-transform:none; font-size: 1.4em;">$\pi_1$</span> be computed? </h3>
   <h3><span style="color:#2EC27E">YES</span>*</h3>
 </div>
 
@@ -741,13 +885,13 @@ $$
 ---
 
 <!-- .slide: data-auto-animate -->
-<div style="display:flex; justify-content:center; gap:1em;">
-  <h3> Can $\pi_1$ be computed? </h3>
+<div style="display:flex; justify-content:center; align-items:baseline; gap:1em;">
+  <h3> Can <span style="text-transform:none; font-size: 1.4em;">$\pi_1$</span> be algorithmically computed? </h3>
   <h3><span style="color:#2EC27E">YES</span>*</h3>
 </div>
 
-<div style="display:flex; justify-content:center; gap:1em;">
-  <h3> Can <u>persistent</u> $\pi_1$ be computed? </h3>
+<div style="display:flex; justify-content:center; align-items:baseline; gap:1em;">
+  <h3> Can <u>persistent</u> <span style="text-transform:none; font-size: 1.4em;">$\pi_1$</span> be computed? </h3>
   <h3><span style="color:#2EC27E">YES</span>*</h3>
 </div>
 
@@ -762,13 +906,13 @@ $$
 ---
 
 <!-- .slide: data-auto-animate -->
-<div style="display:flex; justify-content:center; gap:1em;">
-  <h3> Can $\pi_1$ be computed? </h3>
+<div style="display:flex; justify-content:center; align-items:baseline; gap:1em;">
+  <h3> Can <span style="text-transform:none; font-size: 1.4em;">$\pi_1$</span> be algorithmically computed? </h3>
   <h3><span style="color:#2EC27E">YES</span>*</h3>
 </div>
 
-<div style="display:flex; justify-content:center; gap:1em;">
-  <h3> Can <u>persistent</u> $\pi_1$ be computed? </h3>
+<div style="display:flex; justify-content:center; align-items:baseline; gap:1em;">
+  <h3> Can <u>persistent</u> <span style="text-transform:none; font-size: 1.4em;">$\pi_1$</span> be computed? </h3>
   <h3><span style="color:#2EC27E">YES</span>*</h3>
 </div>
 
@@ -798,13 +942,13 @@ $$
 ---
 
 <!-- .slide: data-auto-animate -->
-<div style="display:flex; justify-content:center; gap:1em;">
-  <h3> Can $\pi_1$ be computed? </h3>
+<div style="display:flex; justify-content:center; align-items:baseline; gap:1em;">
+  <h3> Can <span style="text-transform:none; font-size: 1.4em;">$\pi_1$</span> be algorithmically computed? </h3>
   <h3><span style="color:#2EC27E">YES</span>*</h3>
 </div>
 
-<div style="display:flex; justify-content:center; gap:1em;">
-  <h3> Can <u>persistent</u> $\pi_1$ be computed? </h3>
+<div style="display:flex; justify-content:center; align-items:baseline; gap:1em;">
+  <h3> Can <u>persistent</u> <span style="text-transform:none; font-size: 1.4em;">$\pi_1$</span> be computed? </h3>
   <h3><span style="color:#2EC27E">YES</span>*</h3>
 </div>
 
@@ -818,13 +962,13 @@ $$ \begin{align*}
 ---
 
 <!-- .slide: data-auto-animate -->
-<div style="display:flex; justify-content:center; gap:1em;">
-  <h3> Can $\pi_1$ be computed? </h3>
+<div style="display:flex; justify-content:center; align-items:baseline; gap:1em;">
+  <h3> Can <span style="text-transform:none; font-size: 1.4em;">$\pi_1$</span> be algorithmically computed? </h3>
   <h3><span style="color:#2EC27E">YES</span>*</h3>
 </div>
 
-<div style="display:flex; justify-content:center; gap:1em;">
-  <h3> Can <u>persistent</u> $\pi_1$ be computed? </h3>
+<div style="display:flex; justify-content:center; align-items:baseline; gap:1em;">
+  <h3> Can <u>persistent</u> <span style="text-transform:none; font-size: 1.4em;">$\pi_1$</span> be computed? </h3>
   <h3><span style="color:#2EC27E">YES</span>*</h3>
 </div>
 
@@ -835,20 +979,20 @@ $$ \begin{align*}
 \end{align*} $$
 </div>
 
-<div style="display:flex; justify-content:center; gap:1em;">
-  <h3> Can we make $\pi_1$ barcodes as in $H_*$? </h3>
+<div style="display:flex; justify-content:center; align-items:baseline; gap:1em;">
+  <h3> Can we make <span style="text-transform:none; font-size: 1.4em;">$\pi_1$</span> barcodes as in $H_*$? </h3>
 </div>
 
 ---
 
 <!-- .slide: data-auto-animate -->
-<div style="display:flex; justify-content:center; gap:1em;">
-  <h3> Can $\pi_1$ be computed? </h3>
+<div style="display:flex; justify-content:center; align-items:baseline; gap:1em;">
+  <h3> Can <span style="text-transform:none; font-size: 1.4em;">$\pi_1$</span> be algorithmically computed? </h3>
   <h3><span style="color:#2EC27E">YES</span>*</h3>
 </div>
 
-<div style="display:flex; justify-content:center; gap:1em;">
-  <h3> Can <u>persistent</u> $\pi_1$ be computed? </h3>
+<div style="display:flex; justify-content:center; align-items:baseline; gap:1em;">
+  <h3> Can <u>persistent</u> <span style="text-transform:none; font-size: 1.4em;">$\pi_1$</span> be computed? </h3>
   <h3><span style="color:#2EC27E">YES</span>*</h3>
 </div>
 
@@ -859,21 +1003,21 @@ $$ \begin{align*}
 \end{align*} $$
 </div>
 
-<div style="display:flex; justify-content:center; gap:1em;">
-  <h3> Can we make $\pi_1$ barcodes as in $H_*$? </h3>
-  <h3><span style="color:#F54927">NO</span></h3>
+<div style="display:flex; justify-content:center; align-items:baseline; gap:1em;">
+  <h3> Can we make <span style="text-transform:none; font-size: 1.4em;">$\pi_1$</span> barcodes as in $H_*$? </h3>
+  <h3><span style="color:#F54927">NO</span>*</h3>
 </div>
 
 ---
 
 <!-- .slide: data-auto-animate -->
-<div style="display:flex; justify-content:center; gap:1em;">
-  <h3> Can $\pi_1$ be computed? </h3>
+<div style="display:flex; justify-content:center; align-items:baseline; gap:1em;">
+  <h3> Can <span style="text-transform:none; font-size: 1.4em;">$\pi_1$</span> be algorithmically computed? </h3>
   <h3><span style="color:#2EC27E">YES</span>*</h3>
 </div>
 
-<div style="display:flex; justify-content:center; gap:1em;">
-  <h3> Can <u>persistent</u> $\pi_1$ be computed? </h3>
+<div style="display:flex; justify-content:center; align-items:baseline; gap:1em;">
+  <h3> Can <u>persistent</u> <span style="text-transform:none; font-size: 1.4em;">$\pi_1$</span> be computed? </h3>
   <h3><span style="color:#2EC27E">YES</span>*</h3>
 </div>
 
@@ -884,31 +1028,29 @@ $$ \begin{align*}
 \end{align*} $$
 </div>
 
-<div style="display:flex; justify-content:center; gap:1em;">
-  <h3> Can we make $\pi_1$ barcodes as in $H_*$? </h3>
-  <h3><span style="color:#F54927">NO</span></h3>
+<div style="display:flex; justify-content:center; align-items:baseline; gap:1em;">
+  <h3> Can we make <span style="text-transform:none; font-size: 1.4em;">$\pi_1$</span> barcodes as in $H_*$? </h3>
+  <h3><span style="color:#F54927">NO</span>*</h3>
 </div>
 
-<div data-id="d1">
-The groups $ \pi_1(K_\alpha) $ in 
+- The groups $ \pi_1(K_\alpha) $ in $ K_\bullet \to P \pi_1(K)_\bullet$
 $$
 \begin{array}{ccccccc}
 \pi_1(K_1) & \xrightarrow{} & \pi_1(K_2) & \xrightarrow{} & \dots \xrightarrow{} & \pi_1(K_n)\\
 \end{array}
 $$
-may <span style="color:#F54927">NOT be abelian</span>!
-</div>
+are generally <span style="color:#F54927">non-abelian</span>.
 
 ---
 
 <!-- .slide: data-auto-animate -->
-<div style="display:flex; justify-content:center; gap:1em;">
-  <h3> Can $\pi_1$ be computed? </h3>
+<div style="display:flex; justify-content:center; align-items:baseline; gap:1em;">
+  <h3> Can <span style="text-transform:none; font-size: 1.4em;">$\pi_1$</span> be algorithmically computed? </h3>
   <h3><span style="color:#2EC27E">YES</span>*</h3>
 </div>
 
-<div style="display:flex; justify-content:center; gap:1em;">
-  <h3> Can <u>persistent</u> $\pi_1$ be computed? </h3>
+<div style="display:flex; justify-content:center; align-items:baseline; gap:1em;">
+  <h3> Can <u>persistent</u> <span style="text-transform:none; font-size: 1.4em;">$\pi_1$</span> be computed? </h3>
   <h3><span style="color:#2EC27E">YES</span>*</h3>
 </div>
 
@@ -919,24 +1061,27 @@ $$ \begin{align*}
 \end{align*} $$
 </div>
 
-<div style="display:flex; justify-content:center; gap:1em;">
-  <h3> Can we make $\pi_1$ barcodes as in $H_*$? </h3>
-  <h3><span style="color:#F54927">NO</span></h3>
+<div style="display:flex; justify-content:center; align-items:baseline; gap:1em;">
+  <h3> Can we make <span style="text-transform:none; font-size: 1.4em;">$\pi_1$</span> barcodes as in $H_*$? </h3>
+  <h3><span style="color:#F54927">NO</span>*</h3>
 </div>
 
-<div data-id="d1">
-The groups $ \pi_1(K_\alpha) $ in 
+
+- The groups $ \pi_1(K_\alpha) $ in $ K_\bullet \to P \pi_1(K)_\bullet$
 $$
 \begin{array}{ccccccc}
 \pi_1(K_1) & \xrightarrow{} & \pi_1(K_2) & \xrightarrow{} & \dots \xrightarrow{} & \pi_1(K_n)\\
 \end{array}
 $$
-may <span style="color:#F54927">NOT be abelian</span>!
-</div>
+are generally <span style="color:#F54927">non-abelian</span>.
 
-<div data-id="d2">
-Also, we only know presentations of each $ \pi_1(K_\alpha) $, but <span style="color:#F54927">NOT the actual group</span>!
-</div>
+- Finite presentations are <span style="color:#F54927">not group invariants</span> in general.
+
+- Ordinary barcode decompositions do not apply.
+
+---
+
+### We should look for an <span style="color:#2EC27E">abelian invariant</span> of <span style="text-transform:none; font-size: 1.4em;">$\pi_1$</span>
 
 ---
 
@@ -948,7 +1093,7 @@ Also, we only know presentations of each $ \pi_1(K_\alpha) $, but <span style="c
 <!-- .slide: data-auto-animate -->
 ### Lower central quotients
 
->**Definition** (Lower central series): The **lower central series** of a group $ G $ is the descending series of normal subgroups
+>**Definition**: The <span style="color:#2EC27E">**lower central series**</span> of a group $ G $ is the descending series of normal subgroups
 $$ G = \gamma_1(G) \trianglerighteq \gamma_2(G) \trianglerighteq \dots \trianglerighteq \gamma_n(G) \trianglerighteq \dots $$
 where
 $$ \gamma_{n+1}(G) = [\gamma_n(G), G] = \langle \{ [h, g] : h \in \gamma_n(G), \ g \in G \}\rangle. $$
@@ -958,12 +1103,12 @@ $$ \gamma_{n+1}(G) = [\gamma_n(G), G] = \langle \{ [h, g] : h \in \gamma_n(G), \
 <!-- .slide: data-auto-animate -->
 ### Lower central quotients
 
->**Definition** (Lower central series): The **lower central series** of a group $ G $ is the descending series of normal subgroups
+>**Definition**: The <span style="color:#2EC27E">**lower central series**</span> of a group $ G $ is the descending series of normal subgroups
 $$ G = \gamma_1(G) \trianglerighteq \gamma_2(G) \trianglerighteq \dots \trianglerighteq \gamma_n(G) \trianglerighteq \dots $$
 where
 $$ \gamma_{n+1}(G) = [\gamma_n(G), G] = \langle \{ [h, g] : h \in \gamma_n(G), \ g \in G \}\rangle. $$
 
->**Definition** (Lower central quotient): We deffine the **lower central quotient** of $ G $ as
+>**Definition**: We define the <span style="color:#2EC27E">**$n^\text{th}$-lower central quotient**</span> of $ G $ as
 $$ lcq_n(G) := \frac{\gamma_n(G)}{\gamma_{n+1}(G)}. $$
 
 ---
@@ -971,9 +1116,9 @@ $$ lcq_n(G) := \frac{\gamma_n(G)}{\gamma_{n+1}(G)}. $$
 ### Lower central quotients
 
 <div data-id="l1">
-Let $ G = \pi_1(K) $
+<b>Example</b>: If $ G = \pi_1(K) $
 $$
-lcq_1(G) = \frac{G}{[G, G]} = H_1(K)
+lcq_1(G) = \frac{G}{[G, G]} \cong H_1(K)
 $$
 </div>
 
@@ -983,9 +1128,9 @@ $$
 ### Lower central quotients
 
 <div data-id="l1">
-Let $ G = \pi_1(K) $
+<b>Example</b>: If $ G = \pi_1(K) $
 $$
-lcq_1(G) = \frac{G}{[G, G]} = H_1(K)
+lcq_1(G) = \frac{G}{[G, G]} \cong H_1(K)
 $$
 </div>
 <div data-id="l2">
@@ -1006,9 +1151,9 @@ $$
 ### Lower central quotients
 
 <div data-id="l1">
-Let $ G = \pi_1(K) $
+<b>Example</b>: If $ G = \pi_1(K) $
 $$
-lcq_1(G) = \frac{G}{[G, G]} = H_1(K)
+lcq_1(G) = \frac{G}{[G, G]} \cong H_1(K)
 $$
 </div>
 <div data-id="l2">
@@ -1023,16 +1168,16 @@ $$
 $$
 </div>
 
->For every $ n $, $ lcq_n(G) $ <span style="color:#2EC27E">IS ABELIAN</span>!
+>For every $ n $, $ lcq_n(G) $ <span style="color:#2EC27E">is abelian</span>.
 
 ---
 
 <!-- .slide: data-auto-animate -->
 ### Lower central quotients
 
->For every $ n $, $ lcq_n(G) $ <span style="color:#2EC27E">IS ABELIAN</span>!
+>For every $ n $, $ lcq_n(G) $ <span style="color:#2EC27E">is abelian</span>.
 
->For every $ n $, $ lcq_n(G) $ <span style="color:#2EC27E">CAN BE COMPUTED</span>!
+>For every $ n $, $ lcq_n(G) $ <span style="color:#2EC27E">can be algoritmically computed</span> from a presentation of $ G $.
 **(Sims, 1994)**
 
 ---
@@ -1040,17 +1185,31 @@ $$
 <!-- .slide: data-auto-animate -->
 ### Lower central quotients
 
->For every $ n $, $ lcq_n(G) $ <span style="color:#2EC27E">IS ABELIAN</span>!
+>For every $ n $, $ lcq_n(G) $ <span style="color:#2EC27E">is abelian</span>.
 
->For every $ n $, $ lcq_n(G) $ <span style="color:#2EC27E">CAN BE COMPUTED</span>!
+>For every $ n $, $ lcq_n(G) $ <span style="color:#2EC27E">can be algoritmically computed</span> from a presentation of $ G $.
 **(Sims, 1994)**
 
->The <span style="color:#2EC27E">complexity</span> of computing $ lcq_n(G) $ depends on the <span style="color:#2EC27E">number of generators and relations</span> of the presentation of $ G $ we are using.
+>The <span style="color:#2EC27E">complexity</span> of the computation of $ lcq_n(G) $ depends on the <span style="color:#2EC27E">number of generators and relations</span> of the presentation of $ G $ we are using.
+
+---
+<!-- .slide: data-auto-animate -->
+### Persistent Lower central quotients
 
 ---
 
 <!-- .slide: data-auto-animate -->
-### Lower central quotients
+### Persistent Lower central quotients
+
+>**Definition**: Let $\mathbb K $ a fixed field. We define the <span style="color:#2EC27E"><b> $\mathbb K $-tensored $n^\text{th}$-lower central quotient </b> </span> as
+$$
+  lcq_n^{\mathbb K} := lcq_n \otimes_{\mathbb Z} \mathbb K
+$$
+
+---
+
+<!-- .slide: data-auto-animate -->
+### Persistent lower central quotients
 
 <div data-id="d1">
 $$
@@ -1058,43 +1217,54 @@ $$
 K_1 & \xrightarrow{} & K_2 & \xrightarrow{} & \dots \xrightarrow{} & K_n\\
 \downarrow & & \downarrow &  &   & \downarrow\\
 \pi_1(K_1) & \xrightarrow{} & \pi_1(K_2) & \xrightarrow{} & \dots \xrightarrow{} & \pi_1(K_n)\\
-\downarrow & & \downarrow &  &   & \downarrow\\
-lcq_n(\pi_1(K_1)) & \xrightarrow{} & lcq_n(\pi_1(K_2)) & \xrightarrow{} & \dots \xrightarrow{} & lcq_n(\pi_1(K_n))\\
+\downarrow \scriptstyle{\xi_1} & & \downarrow \scriptstyle{\xi_1} &  &   & \downarrow \scriptstyle{\xi_1}\\
+lcq_n^{\mathbb K}(\pi_1(K_1)) & \xrightarrow{} & lcq_n^{\mathbb K}(\pi_1(K_2)) & \xrightarrow{} & \dots \xrightarrow{} & lcq_n^{\mathbb K}(\pi_1(K_n))\\
 \end{array}
 $$
+</div>
+
+Were we obtain a functor
+<div>
+$$
+  \begin{align*}
+    \xi_\alpha : &\bold{Grp} \to \bold{Vect}_{\mathbb K} \\
+    & G \mapsto \frac{\gamma_n(G)}{\gamma_{n+1}(G)} \otimes_{\mathbb Z} \mathbb K
+  \end{align*}
+$$
+</div>
+
+
+---
+
+<!-- .slide: data-auto-animate -->
+### Persistent lower central quotients
+<div data-id="o">
+Every $ lcq_n(\pi_1(K_\alpha)) $ is abelian so
+$$
+\begin{array}{ccccccc}
+lcq_n^{\mathbb K}(\pi_1(K_1)) & \xrightarrow{} & lcq_n^{\mathbb K}(\pi_1(K_2)) & \xrightarrow{} & \dots \xrightarrow{} & lcq_n^{\mathbb K}(\pi_1(K_n))\\
+\end{array}
+$$
+is a presentent module over the field $ \mathbb K $ (ie. a graded $ \mathbb K [t] $-module).
 </div>
 
 ---
 
 <!-- .slide: data-auto-animate -->
-### Lower central quotients
-<div data-id="o">
-Every $ lcq_n(\pi_1(K_\alpha)) $ is abelian so
-$$
-\begin{array}{ccccccc}
-lcq_n(\pi_1(K_1)) & \xrightarrow{} & lcq_n(\pi_1(K_2)) & \xrightarrow{} & \dots \xrightarrow{} & lcq_n(\pi_1(K_n))\\
-\end{array}
-$$
-can be seen as a graded abelian module.
-</div>
-
----
-
-<!-- .slide: data-auto-animate -->
-### Lower central quotients
+### Persistent lower central quotients
 
 <div data-id="o">
 Every $ lcq_n(\pi_1(K_\alpha)) $ is abelian so
 $$
 \begin{array}{ccccccc}
-lcq_n(\pi_1(K_1)) & \xrightarrow{} & lcq_n(\pi_1(K_2)) & \xrightarrow{} & \dots \xrightarrow{} & lcq_n(\pi_1(K_n))\\
+lcq_n^{\mathbb K}(\pi_1(K_1)) & \xrightarrow{} & lcq_n^{\mathbb K}(\pi_1(K_2)) & \xrightarrow{} & \dots \xrightarrow{} & lcq_n^{\mathbb K}(\pi_1(K_n))\\
 \end{array}
 $$
-can be seen as a graded abelian module.
+is a presentent module over the field $ \mathbb K $ (ie. a graded $ \mathbb K [t] $-module).
 </div>
 
->We can compute <span style="color:#2EC27E">BARCODES</span>!
-**(Skraba & Vejdemo, 2013)**
+>We can compute <span style="color:#2EC27E">barcodes</span>.
+**(Skraba & Vejdemo-Johansson, 2013)**
 
 ---
 
@@ -1156,6 +1326,7 @@ can be seen as a graded abelian module.
 **Example:** $lcq_n$ barcodes of links.
 
 <div style="display:flex; align-items:center; justify-content:center; gap:0.5em;">
+  Unlinked rings
   <span data-id="u">$\mathcal U$:</span>
   <img src='assets/unlink-3.svg'/>
   <span data-id="arrow1">$\rightarrow$</span>
@@ -1165,6 +1336,7 @@ can be seen as a graded abelian module.
 </div>
 
 <div style="display:flex; align-items:center; justify-content:center; gap:0.5em;">
+  Linked rings
   <span data-id="l">$\mathcal L$:</span>
   <img src='assets/link-3.svg'/>
   <span data-id="arrow1">$\rightarrow$</span>
@@ -1174,6 +1346,7 @@ can be seen as a graded abelian module.
 </div>
 
 <div style="display:flex; align-items:center; justify-content:center; gap:0.5em;">
+  Baromean rings
   <span data-id="r">$\mathcal R$:</span>
   <img src='assets/borromean-3.svg'/>
   <span data-id="arrow1">$\rightarrow$</span>
@@ -1186,7 +1359,7 @@ can be seen as a graded abelian module.
 
 <!-- .slide: data-auto-animate -->
 
-**Example:** $lcq_n$ barcodes of links. **($\pi_1$)**
+**Example:** $lcq_n$ barcodes of links. **(<span style="text-transform:none; font-size: 1.4em;">$\pi_1$</span>)**
 
 <div style="display:flex; justify-content:center; align-items:flex-end; gap:1em;">
   <div>
@@ -1571,7 +1744,7 @@ $$
 <pre><code data-line-numbers="1, 5, 6, 8">LoadPackage("nq");
 
 LcsQuotient := function(group, i)
-    local h, lcs;
+    local nq, lcs;
     nq := NilpotentQuotient(group, i+1);
     lcs := LowerCentralSeries(nq);
     if i < Length(lcs) then
@@ -1586,34 +1759,25 @@ Using GAP 4 NQ Package **(Nickel, 2007)**.
 ---
 
 <!-- .slide: data-auto-animate -->
-### Ongoing work
+### Ongoing and future work
 
-- Loking for a computationaly eficient algorithm to compute $ lcq_n(G) $.
+- Look for a computationally efficient algorithm to compute $ lcq_n(G) $.
 
-- Loking for a computationaly eficient algorithm to compute a graded Smith normal form.
+- Apply the methods to metric spaces and real data.
 
-***
-
-### Future work
-
-- Apply methods to metric spaces.
-
-- Apply methods to real data.
-
-- Look for other abelian group invariants further than $ lcq_n $.
+- Explore for abelian invariants beyond $ lcq_n $.
 
 ---
 
 ### References
 
-- Robin Forman. Morse theory for cell complexes. Adv. Math., 134(1):90–145, 1998.
+- Robin Forman</span>. Morse theory for cell complexes. *Advances in Mathathematics*, 1998.
 
-- Ximena Fernández. Morse theory for group presentations. arXiv:1912.00115, 2021.
+- <span style="color:#2EC27E">Ximena Fernández</span>. Morse theory for group presentations. *Transactions of the American Mathematical Society*, 2024.
 
-- Charles C. Sims. Computation with finitely presented groups. Cambridge Univ. Press, 1994.
+- <span style="color:#2EC27E">Charles C. Sims</span>. Computation with finitely presented groups. *Cambridge University Press*, 1994.
 
-- Primoz Skraba and Mikael Vejdemo-Johansson. Persistence modules: Algebra and algorithms.
-  Mathematics of Computation, 0:0–0, 2013.
+- <span style="color:#2EC27E">Primoz Skraba</span> and <span style="color:#2EC27E">Mikael Vejdemo-Johansson</span>. Persistence modules: Algebra and algorithms.
+  *Mathematics of Computation*, 2013.
 
-- Werner Nickel. A gap 4 package computing nilpotent factor groups of finitely presented groups. GAP
-4 Package, 2007.
+- <span style="color:#2EC27E">Werner Nickel</span>. A gap 4 package computing nilpotent factor groups of finitely presented groups. *GAP 4 Package*, 2007.
