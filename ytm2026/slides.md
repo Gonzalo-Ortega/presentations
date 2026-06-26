@@ -16,7 +16,7 @@
   <img width="200" src='assets/city-st-georges-responsive-logo.svg'/>
 </div>
 
-*YTM 2026*
+*YTM 2026 - Monday, 29<sup>th</sup> June*
 
 Notes:
 - 
@@ -37,6 +37,8 @@ Notes:
   </figure>
 </div>
 
+All computations will be made with coefficients in a field $ \mathbb K $.
+
 ---
 
 <!-- .slide: data-auto-animate -->
@@ -52,9 +54,9 @@ Notes:
     <figcaption data-id="s1">$X = S^2 \vee S^1 \vee S^1$</figcaption>
   </figure>
 </div>
-$$H_0(T) = \mathbb Z = H_0(X)$$
-<p data-id="h"> $$H_1(T) = \mathbb Z \oplus \mathbb Z = H_1(X)$$
-$$H_2(T) = \mathbb Z = H_2(X)$$
+$$H_0(T) = \mathbb K = H_0(X)$$
+<p data-id="h"> $$H_1(T) = \mathbb K \oplus \mathbb K = H_1(X)$$
+$$H_2(T) = \mathbb K = H_2(X)$$
 $$H_n(T) = 0 = H_n(X), $$
 $$ \ n \geq 3 $$
 
@@ -74,7 +76,7 @@ $$ \ n \geq 3 $$
   </figure>
 </div>
 
-<p data-id="h"> $$ H_1(T) = \mathbb Z \oplus \mathbb Z = H_1(X) $$
+<p data-id="h"> $$ H_1(T) = \mathbb K \oplus \mathbb K = H_1(X) $$
 
 <p data-id="pi"> $$ \pi_1(T) = \mathbb Z \oplus \mathbb Z \neq \mathbb Z * \mathbb Z = \pi_1(X)$$
 
@@ -186,7 +188,7 @@ $$ \ n \geq 3 $$
       \begin{array}{ccccc}
       T_1 & \xrightarrow{} & T_2 & \xrightarrow{} & T_3\\
       \downarrow \scriptsize{H_1} & & \downarrow \scriptsize{H_1} &  & \downarrow \scriptsize{H_1} \\
-      \mathbb Z & \xrightarrow{} & \mathbb Z & \xrightarrow{} & \mathbb Z \oplus \mathbb Z\\
+      \mathbb Z & \xrightarrow{} & \mathbb Z \oplus \mathbb Z & \xrightarrow{} & \mathbb Z \oplus \mathbb Z\\
       \end{array}
       $$
     </div>
@@ -206,7 +208,7 @@ $$ \ n \geq 3 $$
       \begin{array}{ccccc}
       X_1 & \xrightarrow{} & X_2 & \xrightarrow{} & X_3\\
       \downarrow \scriptsize{H_1} & & \downarrow \scriptsize{H_1} &  & \downarrow \scriptsize{H_1} \\
-      \mathbb Z & \xrightarrow{} & \mathbb Z & \xrightarrow{} & \mathbb Z \oplus \mathbb Z\\
+      \mathbb Z & \xrightarrow{} & \mathbb Z \oplus \mathbb Z & \xrightarrow{} & \mathbb Z \oplus \mathbb Z\\
       \end{array}
       $$
     </div>
@@ -232,7 +234,7 @@ $$ \ n \geq 3 $$
       \begin{array}{ccccc}
       T_1 & \xrightarrow{} & T_2 & \xrightarrow{} & T_3\\
       \downarrow \scriptsize{H_1} & & \downarrow \scriptsize{H_1} &  & \downarrow \scriptsize{H_1} \\
-      \mathbb Z & \xrightarrow{} & \mathbb Z & \xrightarrow{} & \mathbb Z \oplus \mathbb Z\\
+      \mathbb Z & \xrightarrow{} & \mathbb Z \oplus \mathbb Z& \xrightarrow{} & \mathbb Z \oplus \mathbb Z\\
       \end{array}
       $$
       </div>
@@ -253,7 +255,7 @@ $$ \ n \geq 3 $$
       \begin{array}{ccccc}
       X_1 & \xrightarrow{} & X_2 & \xrightarrow{} & X_3\\
       \downarrow \scriptsize{H_1} & & \downarrow \scriptsize{H_1} &  & \downarrow \scriptsize{H_1} \\
-      \mathbb Z & \xrightarrow{} & \mathbb Z & \xrightarrow{} & \mathbb Z \oplus \mathbb Z\\
+      \mathbb Z & \xrightarrow{} & \mathbb Z \oplus \mathbb Z & \xrightarrow{} & \mathbb Z \oplus \mathbb Z\\
       \end{array}
       $$
     </div>
@@ -420,7 +422,7 @@ All barcodes coincide.
 </div>
 <p>*We can compute a <span style="color:#2EC27E"><b>presentation</b></span> of $\pi_1$ of a CW complex.
 
-*Naive computation*: Using the spanning tree algorithm.
+***Naive computation***: Using the <span style="color:#2EC27E"><b>spanning tree</b></span> algorithm.
 
 ---
 
@@ -431,7 +433,7 @@ All barcodes coincide.
 </div>
 <p>*We can compute a <span style="color:#2EC27E"><b>presentation</b></span> of $\pi_1$ of a CW complex.
 
-*Naive computation*: Using the spanning tree algorithm.
+***Naive computation***: Using the <span style="color:#2EC27E"><b>spanning tree</b></span> algorithm.
 
 <img data-id="torus" width=600 src='assets/torus.svg'/>
 <div data-id="label">$$ T $$</div>
@@ -445,7 +447,7 @@ All barcodes coincide.
 </div>
 <p>*We can compute a <span style="color:#2EC27E"><b>presentation</b></span> of $\pi_1$ of a CW complex.
 
-*Naive computation*: Using the spanning tree algorithm.
+***Naive computation***: Using the <span style="color:#2EC27E"><b>spanning tree</b></span> algorithm.
 
 <img data-id="torus" width=500 src='assets/torus-cw.svg'/>
 <div data-id="label">$$ T $$</div>
@@ -459,7 +461,7 @@ All barcodes coincide.
 </div>
 <p>*We can compute a <span style="color:#2EC27E"><b>presentation</b></span> of $\pi_1$ of a CW complex.
 
-*Naive computation*: Using the spanning tree algorithm.
+***Naive computation***: Using the <span style="color:#2EC27E"><b>spanning tree</b></span> algorithm.
 
 <img data-id="torus" width=500 src='assets/tree-torus.svg'/>
 <div data-id="label">$$ T $$</div>
@@ -473,7 +475,7 @@ All barcodes coincide.
 </div>
 <p>*We can compute a <span style="color:#2EC27E"><b>presentation</b></span> of $\pi_1$ of a CW complex.
 
-*Naive computation*: Using the spanning tree algorithm.
+***Naive computation***: Using the <span style="color:#2EC27E"><b>spanning tree</b></span> algorithm.
 
 <img data-id="torus" width=500 src='assets/tree-torus.svg'/>
 <div data-id="label">$$ T \cong \langle e_2, e_4, e_5, e_7, e_8 \mid e_5, \ e_2^{-1} e_7, e_5^{-1}, \ e_7^{-1} e_4^{-1} e_2 e_8, \ e_8^{-1} e_4 \rangle$$</div>
@@ -487,9 +489,9 @@ All barcodes coincide.
 </div>
 <p>*We can compute a <span style="color:#2EC27E"><b>presentation</b></span> of $\pi_1$ of a CW complex.
 
-*Naive computation*: Using the spanning tree algorithm.
+***Naive computation***: Using the <span style="color:#2EC27E"><b>spanning tree</b></span> algorithm.
 
-*Efficient computation*: Using discrete Morse theory to obtain a reduced presentation.
+***Efficient computation***: Using <span style="color:#2EC27E"><b>discrete Morse theory</b></span> to obtain a reduced presentation.
 
 ---
 
@@ -500,9 +502,9 @@ All barcodes coincide.
 </div>
 <p>*We can compute a <span style="color:#2EC27E"><b>presentation</b></span> of $\pi_1$ of a CW complex.
 
-*Efficient computation*: Using discrete Morse theory to obtain a reduced presentation.
+***Efficient computation***: Using <span style="color:#2EC27E"><b>discrete Morse theory</b></span> to obtain a reduced presentation.
 
-Let $ K $ be a regular CW complex and let $ M $ be an acyclic matc  hing on the cells of K.
+Let $ K $ be a regular CW complex and let $ M $ be an acyclic matching on the cells of K.
 
 >**Theorem (Forman, 1995; Chari 2000)**: $ K $ is homotopy equivalent to a CW complex with exactly one cell of dimension $ p $ for each critical (ie., unmatched) cell of dimension $ p $.
 
@@ -515,15 +517,16 @@ Let $ K $ be a regular CW complex and let $ M $ be an acyclic matc  hing on the 
 </div>
 <p>*We can compute a <span style="color:#2EC27E"><b>presentation</b></span> of $\pi_1$ of a CW complex.
 
-*Efficient computation*: Using discrete Morse theory to obtain a reduced presentation.
+***Efficient computation***: Using <span style="color:#2EC27E"><b>discrete Morse theory</b></span> to obtain a reduced presentation.
 
-Let $ K $ be a regular CW complex and let $ M $ be an acyclic matching on the cells of K.
+Let $ K $ be a regular CW complex and let $ M $ be an acyclic matching on the cells of K \
+with only one 0-dimensional critic cell.
 
 >**Theorem (Fernández, 2024)**: A presentation $\mathcal P = \langle X \mid R \rangle $ of $ \pi_1(K) $ with
 $$\\# X = \\# 1\text{-dim critical cells}$$
 $$\\# R = \\# 2\text{-dim critical cells}$$
 can be computed with complexity $ \mathcal O (N^2) $, where
-$$N = \\# \text{cells in 2-skeleton of } K.$$
+$$N = \\# \text{cells in the 2-skeleton of } K.$$
 
 ---
 
@@ -534,7 +537,7 @@ $$N = \\# \text{cells in 2-skeleton of } K.$$
 </div>
 <p>*We can compute a <span style="color:#2EC27E"><b>presentation</b></span> of $\pi_1$ of a CW complex.
 
-*Efficient computation*: Using discrete Morse theory to obtain a reduced presentation.
+***Efficient computation***: Using <span style="color:#2EC27E"><b>discrete Morse theory</b></span> to obtain a reduced presentation.
 
 <img data-id="torus" height=500 src='assets/torus-cw.svg'/>
 <div data-id="label">$$ T $$</div>
@@ -548,7 +551,7 @@ $$N = \\# \text{cells in 2-skeleton of } K.$$
 </div>
 <p>*We can compute a <span style="color:#2EC27E"><b>presentation</b></span> of $\pi_1$ of a CW complex.
 
-*Efficient computation*: Using discrete Morse theory to obtain a reduced presentation.
+***Efficient computation***: Using <span style="color:#2EC27E"><b>discrete Morse theory</b></span> to obtain a reduced presentation.
 
 <img data-id="torus" height=500 src='assets/tree-torus.svg'/>
 <div data-id="label">$$ T $$</div>
@@ -563,7 +566,7 @@ $$N = \\# \text{cells in 2-skeleton of } K.$$
 </div>
 <p>*We can compute a <span style="color:#2EC27E"><b>presentation</b></span> of $\pi_1$ of a CW complex.
 
-*Efficient computation*: Using discrete Morse theory to obtain a reduced presentation.
+***Efficient computation***: Using <span style="color:#2EC27E"><b>discrete Morse theory</b></span> to obtain a reduced presentation.
 
 <img data-id="torus" height=500 src='assets/matching-torus-3.svg'/>
 <div data-id="label">$$ T $$</div>
@@ -577,7 +580,7 @@ $$N = \\# \text{cells in 2-skeleton of } K.$$
 </div>
 <p>*We can compute a <span style="color:#2EC27E"><b>presentation</b></span> of $\pi_1$ of a CW complex.
 
-*Efficient computation*: Using discrete Morse theory to obtain a reduced presentation.
+***Efficient computation***: Using <span style="color:#2EC27E"><b>discrete Morse theory</b></span> to obtain a reduced presentation.
 
 <img data-id="torus" height=500 src='assets/matching-torus-3.svg'/>
 <div data-id="label">$$ T \cong \langle e_2, e_4 \mid e_2^{-1} e_4^{-1} e_2 e_4 \rangle$$</div>
@@ -643,7 +646,7 @@ K_1 & \xrightarrow{} & K_2 & \xrightarrow{} & \dots \xrightarrow{} & K_n\\
 $$
 </div>
 
-*Naive computation*: Compute $ \pi_1 $ presentations independently over every element in the filtration.
+***Naive computation***: Compute $ \pi_1 $ presentations <span style="color:#2EC27E"><b>independently</b></span> over every element in the filtration.
 
 ---
 
@@ -669,9 +672,9 @@ K_1 & \xrightarrow{} & K_2 & \xrightarrow{} & \dots \xrightarrow{} & K_n\\
 $$
 </div>
 
-*Naive computation*: Compute $ \pi_1 $ presentations independently over every element in the filtration.
+***Naive computation***: Compute $ \pi_1 $ presentations <span style="color:#2EC27E"><b>independently</b></span> over every element in the filtration.
 
-*Efficient computation*: Perform a single computation over the whole filtration.
+***Efficient computation***: Perform a <span style="color:#2EC27E"><b>single computation</b></span>  over the whole filtration.
 
 ---
 
@@ -686,12 +689,11 @@ $$
   <h3><span style="color:#2EC27E">YES</span>*</h3>
 </div>
 
-*Efficient computation*: Perform a single computation over the whole filtration.
+***Efficient computation***: Perform a <span style="color:#2EC27E"><b>single computation</b></span>  over the whole filtration.
 
 <blockquote>
-<b>Theorem (Fernández, O., 2026)</b>: Let $ M_\bullet $ be an acyclic matching over $K_\bullet$. Presentations $ \mathcal P_i = \langle X_i \mid R_i \rangle $ of $ \pi_1(K_i) $ with
-
-<div data-id="d1">
+<b>Theorem (Fernández, O., 2026)</b>: Let $ M_\bullet $ be an acyclic matching with only one 0-dim critical cell over $K_\bullet$. Presentations $ \mathcal P_i = \langle X_i \mid R_i \rangle $ of $ \pi_1(K_i) $ with
+<div>
 $$
 \begin{array}{c}
 \# X_i = \# 1\text{-dim critical cells of } K_i, \\
@@ -699,9 +701,8 @@ $$
 \end{array}
 $$
 </div>
-
-and morphisms $ \psi_{i\to j}: \mathcal P_i \to \mathcal P_j $ such that the following comutes 
-<div data-id="d1">
+and morphisms $ \psi_{i\to j}: \mathcal P_i \to \mathcal P_j $ such that the following commutes 
+<div>
 $$
 \begin{array}{ccc}
 K_i & \hookrightarrow{} & K_j \\
@@ -710,7 +711,7 @@ K_i & \hookrightarrow{} & K_j \\
 \end{array}
 $$
 </div>
-can be computed in $ \mathcal O(N^2) $ where $ N $ is the $\#$ of cells in $K^{(2)}$.
+can be computed in $ \mathcal O(N^2) $, $ N = \#$ cells in the 2-skeleton of $K$.
 </blockquote>
 
 ---
@@ -726,7 +727,7 @@ can be computed in $ \mathcal O(N^2) $ where $ N $ is the $\#$ of cells in $K^{(
   <h3><span style="color:#2EC27E">YES</span>*</h3>
 </div>
 
-*Efficient computation*: Perform a single computation over the whole filtration.
+***Efficient computation***: Perform a <span style="color:#2EC27E"><b>single computation</b></span>  over the whole filtration.
 
 **SAGE Math implementation**
 
@@ -1080,8 +1081,9 @@ are generally <span style="color:#F54927">non-abelian</span>.
 - Ordinary barcode decompositions do not apply.
 
 ---
+## IDEA:
 
-### We should look for an <span style="color:#2EC27E">abelian invariant</span> of <span style="text-transform:none; font-size: 1.4em;">$\pi_1$</span>
+### Look for an <span style="color:#2EC27E">abelian invariant</span> of <span style="text-transform:none; font-size: 1.4em;">$\pi_1$</span>
 
 ---
 
@@ -1116,10 +1118,7 @@ $$ lcq_n(G) := \frac{\gamma_n(G)}{\gamma_{n+1}(G)}. $$
 ### Lower central quotients
 
 <div data-id="l1">
-<b>Example</b>: If $ G = \pi_1(K) $
-$$
-lcq_1(G) = \frac{G}{[G, G]} \cong H_1(K)
-$$
+<b>Example</b>: Let $ G = \pi_1(K) $.
 </div>
 
 ---
@@ -1128,17 +1127,17 @@ $$
 ### Lower central quotients
 
 <div data-id="l1">
-<b>Example</b>: If $ G = \pi_1(K) $
-$$
-lcq_1(G) = \frac{G}{[G, G]} \cong H_1(K)
-$$
+<b>Example</b>: Let $ G = \pi_1(K) $.
 </div>
 <div data-id="l2">
 $$
-lcq_2(G) = \frac{[G, G]}{[[G, G], G]}
+lcq_1(G) = \frac{G}{[G, G]} \cong H_1(K),
 $$
 $$
-lcq_3(G) = \frac{[[G, G], G]}{[[[G, G], G], G]}
+lcq_2(G) = \frac{[G, G]}{[[G, G], G]},
+$$
+$$
+lcq_3(G) = \frac{[[G, G], G]}{[[[G, G], G], G]},
 $$
 $$
 \dots
@@ -1151,20 +1150,37 @@ $$
 ### Lower central quotients
 
 <div data-id="l1">
-<b>Example</b>: If $ G = \pi_1(K) $
+<b>Example (Wedge of circles)</b>: Let $ K = \bigvee_n S^1 $, $ G = \pi_1\left(K\right) = F_n $.
+</div>
+<div data-id="l3">
 $$
-lcq_1(G) = \frac{G}{[G, G]} \cong H_1(K)
+  lcq_1 (F_n) \cong \mathbb Z^n,
+$$
+$$
+  lcq_2 (F_n) \cong \mathbb Z^{\binom{n}{2}},
+$$
+$$
+  lcq_2 (F_n) \cong \mathbb Z^{n\binom{n}{2} - \binom{n}{3}}.
 $$
 </div>
-<div data-id="l2">
+
+---
+
+<!-- .slide: data-auto-animate -->
+### Lower central quotients
+
+<div data-id="l1">
+<b>Example (Wedge of circles)</b>: Let $ K = \bigvee_n S^1 $, $ G = \pi_1\left(K\right) = F_n $.
+</div>
+<div data-id="l3">
 $$
-lcq_2(G) = \frac{[G, G]}{[[G, G], G]}
+  lcq_1 (F_n) \cong \mathbb Z^n,
 $$
 $$
-lcq_3(G) = \frac{[[G, G], G]}{[[[G, G], G], G]}
+  lcq_2 (F_n) \cong \mathbb Z^{\binom{n}{2}},
 $$
 $$
-\dots
+  lcq_3 (F_n) \cong \mathbb Z^{n\binom{n}{2} - \binom{n}{3}}.
 $$
 </div>
 
@@ -1217,13 +1233,13 @@ $$
 K_1 & \xrightarrow{} & K_2 & \xrightarrow{} & \dots \xrightarrow{} & K_n\\
 \downarrow & & \downarrow &  &   & \downarrow\\
 \pi_1(K_1) & \xrightarrow{} & \pi_1(K_2) & \xrightarrow{} & \dots \xrightarrow{} & \pi_1(K_n)\\
-\downarrow \scriptstyle{\xi_1} & & \downarrow \scriptstyle{\xi_1} &  &   & \downarrow \scriptstyle{\xi_1}\\
+\downarrow \scriptstyle{\xi_1} & & \downarrow \scriptstyle{\xi_2} &  &   & \downarrow \scriptstyle{\xi_n}\\
 lcq_n^{\mathbb K}(\pi_1(K_1)) & \xrightarrow{} & lcq_n^{\mathbb K}(\pi_1(K_2)) & \xrightarrow{} & \dots \xrightarrow{} & lcq_n^{\mathbb K}(\pi_1(K_n))\\
 \end{array}
 $$
 </div>
 
-Were we obtain a functor
+Here we obtain a functor
 <div>
 $$
   \begin{align*}
@@ -1245,7 +1261,7 @@ $$
 lcq_n^{\mathbb K}(\pi_1(K_1)) & \xrightarrow{} & lcq_n^{\mathbb K}(\pi_1(K_2)) & \xrightarrow{} & \dots \xrightarrow{} & lcq_n^{\mathbb K}(\pi_1(K_n))\\
 \end{array}
 $$
-is a presentent module over the field $ \mathbb K $ (ie. a graded $ \mathbb K [t] $-module).
+is a <span style="color:#2EC27E"><b>persistent module</b></span> over the field $ \mathbb K $ (ie. a graded $ \mathbb K [t] $-module).
 </div>
 
 ---
@@ -1260,10 +1276,10 @@ $$
 lcq_n^{\mathbb K}(\pi_1(K_1)) & \xrightarrow{} & lcq_n^{\mathbb K}(\pi_1(K_2)) & \xrightarrow{} & \dots \xrightarrow{} & lcq_n^{\mathbb K}(\pi_1(K_n))\\
 \end{array}
 $$
-is a presentent module over the field $ \mathbb K $ (ie. a graded $ \mathbb K [t] $-module).
+is a <span style="color:#2EC27E"><b>persistent module</b></span> over the field $ \mathbb K $ (ie. a graded $ \mathbb K [t] $-module).
 </div>
 
->We can compute <span style="color:#2EC27E">barcodes</span>.
+>We can compute <span style="color:#2EC27E"><b>barcodes</b></span>.
 **(Skraba & Vejdemo-Johansson, 2013)**
 
 ---
@@ -1287,8 +1303,8 @@ is a presentent module over the field $ \mathbb K $ (ie. a graded $ \mathbb K [t
   T_1 & \xrightarrow{} & T_2 & \xrightarrow{} & T_3\\
   \downarrow\scriptstyle{\pi_1} & & \downarrow\scriptstyle{\pi_1} &  & \downarrow\scriptstyle{\pi_1} \\
   \mathbb Z & \xrightarrow{} & \mathbb Z * \mathbb Z & \xrightarrow{} & \mathbb Z \oplus \mathbb Z\\
-  \downarrow\scriptstyle{lcq_2} & & \downarrow\scriptstyle{lcq_2} & & \downarrow\scriptstyle{lcq_2} \\
-  0 & \xrightarrow{} & \mathbb Z & \xrightarrow{} & 0\\
+  \downarrow\scriptstyle{lcq_2^{\mathbb K}} & & \downarrow\scriptstyle{lcq_2^{\mathbb K}} & & \downarrow\scriptstyle{lcq_2^{\mathbb K}} \\
+  0 & \xrightarrow{} & \mathbb K & \xrightarrow{} & 0\\
   \end{array}
   $$
   </div>
@@ -1310,8 +1326,8 @@ is a presentent module over the field $ \mathbb K $ (ie. a graded $ \mathbb K [t
   X_1 & \xrightarrow{} & X_2 & \xrightarrow{} & X_3\\
   \downarrow\scriptstyle{\pi_1} & & \downarrow\scriptstyle{\pi_1} &  & \downarrow\scriptstyle{\pi_1} \\
   \mathbb Z & \xrightarrow{} & \mathbb Z * \mathbb Z & \xrightarrow{} & \mathbb Z * \mathbb Z\\
-  \downarrow\scriptstyle{lcq_2} & & \downarrow\scriptstyle{lcq_2} &  & \downarrow\scriptstyle{lcq_2} \\
-  0 & \xrightarrow{} & \mathbb Z  & \xrightarrow{} & \mathbb Z\\
+  \downarrow\scriptstyle{lcq_2^{\mathbb K}} & & \downarrow\scriptstyle{lcq_2^{\mathbb K}} &  & \downarrow\scriptstyle{lcq_2^{\mathbb K}} \\
+  0 & \xrightarrow{} & \mathbb K  & \xrightarrow{} & \mathbb K\\
   \end{array}
   $$
   </div>
@@ -1420,7 +1436,7 @@ $$
 
 <!-- .slide: data-auto-animate -->
 
-**Example:** $lcq_n$ barcodes of links. **($lcq_1 = H_1$)**
+**Example:** $lcq_n$ barcodes of links. **($lcq_1^{\mathbb K}$)**
 
 <div style="display:flex; justify-content:center; align-items:flex-end; gap:1em;">
   <div>
@@ -1437,7 +1453,7 @@ $$
       \begin{array}{ccccc}
       \mathbb R^3 \setminus U_1 & \xrightarrow{} & \mathbb R^3 \setminus U_2 & \xrightarrow{} & \mathbb R^3 \setminus U_3\\
       \downarrow\scriptstyle{H_1} & & \downarrow\scriptstyle{H_1} &  & \downarrow\scriptstyle{H_1} \\
-      \mathbb Z^3 & \xrightarrow{} & \mathbb Z^2 & \xrightarrow{} & \mathbb Z\\
+      \mathbb K^3 & \xrightarrow{} & \mathbb K^2 & \xrightarrow{} & \mathbb K\\
       \end{array}
       $$
     </div>
@@ -1456,7 +1472,7 @@ $$
       \begin{array}{ccccc}
       \mathbb R^3 \setminus L_1 & \xrightarrow{} & \mathbb R^3 \setminus L_2 & \xrightarrow{} & \mathbb R^3 \setminus L_3\\
       \downarrow\scriptstyle{H_1} & & \downarrow\scriptstyle{H_1} &  & \downarrow\scriptstyle{H_1} \\
-      \mathbb Z^3 & \xrightarrow{} & \mathbb Z^2 & \xrightarrow{} & \mathbb Z\\
+      \mathbb K^3 & \xrightarrow{} & \mathbb K^2 & \xrightarrow{} & \mathbb K\\
       \end{array}
       $$
     </div>
@@ -1476,7 +1492,7 @@ $$
     \begin{array}{ccccc}
     \mathbb R^3 \setminus R_1 & \xrightarrow{} & \mathbb R^3 \setminus R_2 & \xrightarrow{} & \mathbb R^3 \setminus R_3\\
     \downarrow\scriptstyle{H_1} & & \downarrow\scriptstyle{H_1} &  & \downarrow\scriptstyle{H_1} \\
-    \mathbb Z^3 & \xrightarrow{} & \mathbb Z^2 & \xrightarrow{} & \mathbb Z\\
+    \mathbb K^3 & \xrightarrow{} & \mathbb K^2 & \xrightarrow{} & \mathbb K\\
     \end{array}
     $$
   </div>
@@ -1485,7 +1501,7 @@ $$
 ---
 
 <!-- .slide: data-auto-animate -->
-**Example:** $lcq_n$ barcodes of links. **($lcq_1 = H_1$)**
+**Example:** $lcq_n$ barcodes of links. **($lcq_1^{\mathbb K}$)**
 
 <div style="display:flex; align-items:center; justify-content:center; gap:2em;">
   <div>
@@ -1527,7 +1543,7 @@ $$
 
 <!-- .slide: data-auto-animate -->
 
-**Example:** $lcq_n$ barcodes of links. **($lcq_2$)**
+**Example:** $lcq_n$ barcodes of links. **($lcq_2^{\mathbb K}$)**
 
 <div style="display:flex; justify-content:center; align-items:flex-end; gap:1em;">
   <div>
@@ -1543,8 +1559,8 @@ $$
       $$
       \begin{array}{ccccc}
       \mathbb R^3 \setminus U_1 & \xrightarrow{} & \mathbb R^3 \setminus U_2 & \xrightarrow{} & \mathbb R^3 \setminus U_3\\
-      \downarrow\scriptstyle{lcq_2} & & \downarrow\scriptstyle{lcq_2} &  & \downarrow\scriptstyle{lcq_2} \\
-      \mathbb Z^3 & \xrightarrow{} & \mathbb Z & \xrightarrow{} & 0\\
+      \downarrow\scriptstyle{lcq_2^{\mathbb K}} & & \downarrow\scriptstyle{lcq_2^{\mathbb K}} &  & \downarrow\scriptstyle{lcq_2^{\mathbb K}} \\
+      \mathbb K^3 & \xrightarrow{} & \mathbb K & \xrightarrow{} & 0\\
       \end{array}
       $$
     </div>
@@ -1562,8 +1578,8 @@ $$
     $$
     \begin{array}{ccccc}
     \mathbb R^3 \setminus L_1 & \xrightarrow{} & \mathbb R^3 \setminus L_2 & \xrightarrow{} & \mathbb R^3 \setminus L_3\\
-    \downarrow\scriptstyle{lcq_2} & & \downarrow\scriptstyle{lcq_2} &  & \downarrow\scriptstyle{lcq_2} \\
-    \mathbb Z & \xrightarrow{} & 0 & \xrightarrow{} & 0\\
+    \downarrow\scriptstyle{lcq_2^{\mathbb K}} & & \downarrow\scriptstyle{lcq_2^{\mathbb K}} &  & \downarrow\scriptstyle{lcq_2^{\mathbb K}} \\
+    \mathbb K & \xrightarrow{} & 0 & \xrightarrow{} & 0\\
     \end{array}
     $$
     </div>
@@ -1583,8 +1599,8 @@ $$
     $$
     \begin{array}{ccccc}
     \mathbb R^3 \setminus R_1 & \xrightarrow{} & \mathbb R^3 \setminus R_2 & \xrightarrow{} & \mathbb R^3 \setminus R_3\\
-    \downarrow\scriptstyle{lcq_2} & & \downarrow\scriptstyle{lcq_2} &  & \downarrow\scriptstyle{lcq_2} \\
-    \mathbb Z^3 & \xrightarrow{} & \mathbb Z & \xrightarrow{} & 0\\
+    \downarrow\scriptstyle{lcq_2^{\mathbb K}} & & \downarrow\scriptstyle{lcq_2^{\mathbb K}} &  & \downarrow\scriptstyle{lcq_2^{\mathbb K}} \\
+    \mathbb K^3 & \xrightarrow{} & \mathbb K & \xrightarrow{} & 0\\
     \end{array}
     $$
   </div>
@@ -1593,7 +1609,7 @@ $$
 ---
 
 <!-- .slide: data-auto-animate -->
-**Example:** $lcq_n$ barcodes of links. **($lcq_2$)**
+**Example:** $lcq_n$ barcodes of links. **($lcq_2^{\mathbb K}$)**
 
 <div style="display:flex; align-items:center; justify-content:center; gap:2em;">
   <div>
@@ -1634,7 +1650,7 @@ $$
 ---
 
 <!-- .slide: data-auto-animate -->
-**Example:** $lcq_n$ barcodes of links. **($lcq_3$)**
+**Example:** $lcq_n$ barcodes of links. **($lcq_3^{\mathbb K}$)**
 
 <div style="display:flex; justify-content:center; align-items:flex-end; gap:1em;">
   <div>
@@ -1650,8 +1666,8 @@ $$
       $$
       \begin{array}{ccccc}
       \mathbb R^3 \setminus U_1 & \xrightarrow{} & \mathbb R^3 \setminus U_2 & \xrightarrow{} & \mathbb R^3 \setminus U_3\\
-      \downarrow\scriptstyle{lcq_3} & & \downarrow\scriptstyle{lcq_3} &  & \downarrow\scriptstyle{lcq_3} \\
-      \mathbb Z^8 & \xrightarrow{} & \mathbb Z^2 & \xrightarrow{} & 0\\
+      \downarrow\scriptstyle{lcq_3^{\mathbb K}} & & \downarrow\scriptstyle{lcq_3^{\mathbb K}} &  & \downarrow\scriptstyle{lcq_3^{\mathbb K}} \\
+      \mathbb K^8 & \xrightarrow{} & \mathbb K^2 & \xrightarrow{} & 0\\
       \end{array}
       $$
     </div>
@@ -1669,8 +1685,8 @@ $$
       $$
       \begin{array}{ccccc}
       \mathbb R^3 \setminus L_1 & \xrightarrow{} & \mathbb R^3 \setminus L_2 & \xrightarrow{} & \mathbb R^3 \setminus L_3\\
-      \downarrow\scriptstyle{lcq_3} & & \downarrow\scriptstyle{lcq_3} &  & \downarrow\scriptstyle{lcq_3} \\
-      \mathbb Z^2 & \xrightarrow{} & 0 & \xrightarrow{} & 0\\
+      \downarrow\scriptstyle{lcq_3^{\mathbb K}} & & \downarrow\scriptstyle{lcq_3^{\mathbb K}} &  & \downarrow\scriptstyle{lcq_3^{\mathbb K}} \\
+      \mathbb K^2 & \xrightarrow{} & 0 & \xrightarrow{} & 0\\
       \end{array}
       $$
     </div>
@@ -1690,8 +1706,8 @@ $$
     $$
     \begin{array}{ccccc}
     \mathbb R^3 \setminus R_1 & \xrightarrow{} & \mathbb R^3 \setminus R_2 & \xrightarrow{} & \mathbb R^3 \setminus R_3\\
-    \downarrow\scriptstyle{lcq_3} & & \downarrow\scriptstyle{lcq_3} &  & \downarrow\scriptstyle{lcq_3} \\
-    \mathbb Z^6 & \xrightarrow{} & \mathbb Z^2 & \xrightarrow{} & 0\\
+    \downarrow\scriptstyle{lcq_3^{\mathbb K}} & & \downarrow\scriptstyle{lcq_3^{\mathbb K}} &  & \downarrow\scriptstyle{lcq_3^{\mathbb K}} \\
+    \mathbb K^6 & \xrightarrow{} & \mathbb K^2 & \xrightarrow{} & 0\\
     \end{array}
     $$
   </div>
@@ -1700,7 +1716,7 @@ $$
 ---
 
 <!-- .slide: data-auto-animate -->
-**Example:** $lcq_n$ barcodes of links. **($lcq_3$)**
+**Example:** $lcq_n$ barcodes of links. **($lcq_3^{\mathbb K}$)**
 
 <div style="display:flex; align-items:center; justify-content:center; gap:2em;">
   <div>
@@ -1759,25 +1775,65 @@ Using GAP 4 NQ Package **(Nickel, 2007)**.
 ---
 
 <!-- .slide: data-auto-animate -->
+### Summary
+- <span style="color:#2EC27E"><b>$ PH_* $ has limitations</b></span> to distinguish certain kinds of filtrations.
+
+---
+
+<!-- .slide: data-auto-animate -->
+### Summary
+- <span style="color:#2EC27E"><b>$ PH_* $ has limitations</b></span> to distinguish certain kinds of filtrations.
+  
+- We have design an <span style="color:#2EC27E"><b> eficient algorithm to compute $P\pi_1$</b></span> presentations.
+
+---
+
+<!-- .slide: data-auto-animate -->
+### Summary
+- <span style="color:#2EC27E"><b>$ PH_* $ has limitations</b></span> to distinguish certain kinds of filtrations.
+  
+- We have design an <span style="color:#2EC27E"><b> eficient algorithm to compute $P\pi_1$</b></span> presentations.
+  
+- We found a way of <span style="color:#2EC27E"><b>computing $P\pi_1$ barcodes</b></span> using $ lcq_n $.
+
+---
+
+<!-- .slide: data-auto-animate -->
 ### Ongoing and future work
 
-- Look for a computationally efficient algorithm to compute $ lcq_n(G) $.
+- Look for a computationally <span style="color:#2EC27E"><b>efficient algorithm to compute $ lcq_n(G) $</b></span>.
 
-- Apply the methods to metric spaces and real data.
+---
 
-- Explore for abelian invariants beyond $ lcq_n $.
+<!-- .slide: data-auto-animate -->
+### Ongoing and future work
+
+- Look for a computationally <span style="color:#2EC27E"><b>efficient algorithm to compute $ lcq_n(G) $</b></span>.
+
+- Apply the methods to <span style="color:#2EC27E"><b>metric spaces</b></span> and <span style="color:#2EC27E"><b>real data</b></span>.
+
+---
+
+<!-- .slide: data-auto-animate -->
+### Ongoing and future work
+
+- Look for a computationally <span style="color:#2EC27E"><b>efficient algorithm to compute $ lcq_n(G) $</b></span>.
+
+- Apply the methods to <span style="color:#2EC27E"><b>metric spaces</b></span> and <span style="color:#2EC27E"><b>real data</b></span>.
+
+- Explore for <span style="color:#2EC27E"><b>abelian invariants</b></span> beyond $ lcq_n $.
 
 ---
 
 ### References
 
-- Robin Forman</span>. Morse theory for cell complexes. *Advances in Mathathematics*, 1998.
+- <span style="color:#2EC27E"><b>Robin Forman</b></span>. Morse theory for cell complexes. *Advances in Mathathematics*, 1998.
 
-- <span style="color:#2EC27E">Ximena Fernández</span>. Morse theory for group presentations. *Transactions of the American Mathematical Society*, 2024.
+- <span style="color:#2EC27E"><b>Ximena Fernández</b></span>. Morse theory for group presentations. *Transactions of the American Mathematical Society*, 2024.
 
-- <span style="color:#2EC27E">Charles C. Sims</span>. Computation with finitely presented groups. *Cambridge University Press*, 1994.
+- <span style="color:#2EC27E"><b>Charles C. Sims</b></span>. Computation with finitely presented groups. *Cambridge University Press*, 1994.
 
-- <span style="color:#2EC27E">Primoz Skraba</span> and <span style="color:#2EC27E">Mikael Vejdemo-Johansson</span>. Persistence modules: Algebra and algorithms.
+- <span style="color:#2EC27E"><b>Primoz Skraba</b></span> and <span style="color:#2EC27E"><b>Mikael Vejdemo-Johansson</b></span>. Persistence modules: Algebra and algorithms.
   *Mathematics of Computation*, 2013.
 
-- <span style="color:#2EC27E">Werner Nickel</span>. A gap 4 package computing nilpotent factor groups of finitely presented groups. *GAP 4 Package*, 2007.
+- <span style="color:#2EC27E"><b>Werner Nickel</b></span>. A gap 4 package computing nilpotent factor groups of finitely presented groups. *GAP 4 Package*, 2007.
