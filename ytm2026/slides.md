@@ -53,10 +53,10 @@ All computations will be made with coefficients in a field $ \mathbb k $.
     <figcaption data-id="s1">$X = S^2 \vee S^1 \vee S^1$</figcaption>
   </figure>
 </div>
-$$H_0(T) = \mathbb k = H_0(X)$$
-<p data-id="h"> $$H_1(T, \mathbb k) = \mathbb k \oplus \mathbb k = H_1(X, \mathbb k)$$
-$$H_2(T) = \mathbb k = H_2(X)$$
-$$H_n(T) = 0 = H_n(X), $$
+$$H_0(T, \mathbb k) = \mathbb k = H_0(X, \mathbb k)$$
+<p data-id="h"> $$H_1(T, \mathbb k) = \mathbb k^2 = H_1(X, \mathbb k)$$
+$$H_2(T, \mathbb k) = \mathbb k = H_2(X, \mathbb k)$$
+$$H_n(T, \mathbb k) = 0 = H_n(X, \mathbb k), $$
 $$ \ n \geq 3 $$
 
 ---
@@ -75,7 +75,7 @@ $$ \ n \geq 3 $$
   </figure>
 </div>
 
-<p data-id="h"> $$ H_1(T, \mathbb k) = \mathbb k \oplus \mathbb k = H_1(X, \mathbb k) $$
+<p data-id="h"> $$ H_1(T, \mathbb k) = \mathbb k^2 = H_1(X, \mathbb k) $$
 
 <p data-id="pi"> $$ \pi_1(T) = \mathbb Z \oplus \mathbb Z \neq \mathbb Z * \mathbb Z = \pi_1(X)$$
 
