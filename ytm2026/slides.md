@@ -1,4 +1,3 @@
-
 <!-- .slide: data-auto-animate -->
 # Persistent <span style="text-transform:none; font-size: 1.4em;">$\pi_1$</span>
 ## & Lower-central-series barcodes
@@ -37,7 +36,7 @@ Notes:
   </figure>
 </div>
 
-All computations will be made with coefficients in a field $ \mathbb K $.
+All computations will be made with coefficients in a field $ \mathbb k $.
 
 ---
 
@@ -54,9 +53,9 @@ All computations will be made with coefficients in a field $ \mathbb K $.
     <figcaption data-id="s1">$X = S^2 \vee S^1 \vee S^1$</figcaption>
   </figure>
 </div>
-$$H_0(T) = \mathbb K = H_0(X)$$
-<p data-id="h"> $$H_1(T) = \mathbb K \oplus \mathbb K = H_1(X)$$
-$$H_2(T) = \mathbb K = H_2(X)$$
+$$H_0(T) = \mathbb k = H_0(X)$$
+<p data-id="h"> $$H_1(T, \mathbb k) = \mathbb k \oplus \mathbb k = H_1(X, \mathbb k)$$
+$$H_2(T) = \mathbb k = H_2(X)$$
 $$H_n(T) = 0 = H_n(X), $$
 $$ \ n \geq 3 $$
 
@@ -76,7 +75,7 @@ $$ \ n \geq 3 $$
   </figure>
 </div>
 
-<p data-id="h"> $$ H_1(T) = \mathbb K \oplus \mathbb K = H_1(X) $$
+<p data-id="h"> $$ H_1(T, \mathbb k) = \mathbb k \oplus \mathbb k = H_1(X, \mathbb k) $$
 
 <p data-id="pi"> $$ \pi_1(T) = \mathbb Z \oplus \mathbb Z \neq \mathbb Z * \mathbb Z = \pi_1(X)$$
 
@@ -126,7 +125,7 @@ $$ \ n \geq 3 $$
 <!-- .slide: data-auto-animate -->
 ### The limitations of persistent $H_*$
 
-<div style="display:flex; justify-content:center; align-items:flex-end; gap:5em;">
+<div style="display:flex; justify-content:center; align-items:flex-end; gap:2em;">
   <div>
     <div style="display:flex; align-items:center; justify-content:center; gap:0.1em; font-size:0.75em;">
       <span data-id="t">$\mathcal T$: </span>
@@ -136,12 +135,12 @@ $$ \ n \geq 3 $$
       <span data-id="a2">$\rightarrow$</span>
       <img data-id="torus" src='assets/torus.svg' style="width:5em;"/>
     </div>
-    <div data-id="d1">
+    <div data-id="d1" style="font-size:0.9em;">
       $$
       \begin{array}{ccccc}
       T_1 & \xrightarrow{} & T_2 & \xrightarrow{} & T_3\\
       \downarrow & & \downarrow &  & \downarrow \\
-      H_1(T_1) & \xrightarrow{} & H_1(T_2) & \xrightarrow{} & H_1(T_3)\\
+      H_1(T_1, \mathbb k) & \xrightarrow{} & H_1(T_2, \mathbb k) & \xrightarrow{} & H_1(T_3, \mathbb k)\\
       \end{array}
       $$
     </div>
@@ -156,12 +155,12 @@ $$ \ n \geq 3 $$
       <span data-id="a4">$\rightarrow$</span>
       <img data-id="sphere" src='assets/sphere.svg' style="width:5em;"/>
     </div>
-    <div data-id="d2">
+    <div data-id="d2" style="font-size:0.9em;">
       $$
       \begin{array}{ccccc}
       X_1 & \xrightarrow{} & X_2 & \xrightarrow{} & X_3\\
       \downarrow & & \downarrow &  & \downarrow \\
-      H_1(X_1) & \xrightarrow{} & H_1(X_2) & \xrightarrow{} & H_1(X_3)\\
+      H_1(X_1, \mathbb k) & \xrightarrow{} & H_1(X_2, \mathbb k) & \xrightarrow{} & H_1(X_3, \mathbb k)\\
       \end{array}
       $$
       </div>
@@ -188,7 +187,7 @@ $$ \ n \geq 3 $$
       \begin{array}{ccccc}
       T_1 & \xrightarrow{} & T_2 & \xrightarrow{} & T_3\\
       \downarrow \scriptsize{H_1} & & \downarrow \scriptsize{H_1} &  & \downarrow \scriptsize{H_1} \\
-      \mathbb Z & \xrightarrow{} & \mathbb Z \oplus \mathbb Z & \xrightarrow{} & \mathbb Z \oplus \mathbb Z\\
+      \mathbb k & \xrightarrow{} & \mathbb k^2 & \xrightarrow{} & \mathbb k^2\\
       \end{array}
       $$
     </div>
@@ -208,7 +207,7 @@ $$ \ n \geq 3 $$
       \begin{array}{ccccc}
       X_1 & \xrightarrow{} & X_2 & \xrightarrow{} & X_3\\
       \downarrow \scriptsize{H_1} & & \downarrow \scriptsize{H_1} &  & \downarrow \scriptsize{H_1} \\
-      \mathbb Z & \xrightarrow{} & \mathbb Z \oplus \mathbb Z & \xrightarrow{} & \mathbb Z \oplus \mathbb Z\\
+      \mathbb k & \xrightarrow{} & \mathbb k^2 & \xrightarrow{} & \mathbb k^2 \\
       \end{array}
       $$
     </div>
@@ -234,7 +233,7 @@ $$ \ n \geq 3 $$
       \begin{array}{ccccc}
       T_1 & \xrightarrow{} & T_2 & \xrightarrow{} & T_3\\
       \downarrow \scriptsize{H_1} & & \downarrow \scriptsize{H_1} &  & \downarrow \scriptsize{H_1} \\
-      \mathbb Z & \xrightarrow{} & \mathbb Z \oplus \mathbb Z& \xrightarrow{} & \mathbb Z \oplus \mathbb Z\\
+      \mathbb k & \xrightarrow{} & \mathbb k^2 & \xrightarrow{} & \mathbb k^2\\
       \end{array}
       $$
       </div>
@@ -255,7 +254,7 @@ $$ \ n \geq 3 $$
       \begin{array}{ccccc}
       X_1 & \xrightarrow{} & X_2 & \xrightarrow{} & X_3\\
       \downarrow \scriptsize{H_1} & & \downarrow \scriptsize{H_1} &  & \downarrow \scriptsize{H_1} \\
-      \mathbb Z & \xrightarrow{} & \mathbb Z \oplus \mathbb Z & \xrightarrow{} & \mathbb Z \oplus \mathbb Z\\
+      \mathbb k & \xrightarrow{} & \mathbb k^2 & \xrightarrow{} & \mathbb k^2 \\
       \end{array}
       $$
     </div>
@@ -271,7 +270,7 @@ All barcodes coincide.
 <!-- .slide: data-auto-animate -->
 ### The limitations of persistent $H_*$
 
-<div style="display:flex; justify-content:center; align-items:flex-end; gap:5em;">
+<div style="display:flex; justify-content:center; align-items:flex-end; gap:2em;">
   <div>
     <div style="display:flex; align-items:center; justify-content:center; gap:0.1em; font-size:0.75em;">
       <span data-id="t">$\mathcal T$: </span>
@@ -281,12 +280,12 @@ All barcodes coincide.
       <span data-id="a2">$\rightarrow$</span>
       <img data-id="torus" src='assets/torus.svg' style="width:5em;"/>
     </div>
-    <div data-id="d1">
+    <div data-id="d1"  style="font-size:0.9em;">
       $$
       \begin{array}{ccccc}
       T_1 & \xrightarrow{} & T_2 & \xrightarrow{} & T_3\\
       \downarrow & & \downarrow &  & \downarrow \\
-      H_1(T_1) & \xrightarrow{} & H_1(T_2) & \xrightarrow{} & H_1(T_3)\\
+      H_1(T_1, \mathbb k) & \xrightarrow{} & H_1(T_2, \mathbb k) & \xrightarrow{} & H_1(T_3, \mathbb k)\\
       \end{array}
       $$
       </div>
@@ -301,12 +300,12 @@ All barcodes coincide.
       <span data-id="a4">$\rightarrow$</span>
       <img data-id="sphere" src='assets/sphere.svg' style="width:5em;"/>
     </div>
-    <div data-id="d2">
+    <div data-id="d2"  style="font-size:0.9em;">
       $$
       \begin{array}{ccccc}
       X_1 & \xrightarrow{} & X_2 & \xrightarrow{} & X_3\\
       \downarrow & & \downarrow &  & \downarrow \\
-      H_1(X_1) & \xrightarrow{} & H_1(X_2) & \xrightarrow{} & H_1(X_3)\\
+      H_1(X_1, \mathbb k) & \xrightarrow{} & H_1(X_2, \mathbb k) & \xrightarrow{} & H_1(X_3, \mathbb k)\\
       \end{array}
       $$
       </div>
@@ -320,7 +319,7 @@ All barcodes coincide.
 <!-- .slide: data-auto-animate -->
 ### The limitations of persistent $H_*$
 
-<div style="display:flex; justify-content:center; align-items:flex-end; gap:5em;">
+<div style="display:flex; justify-content:center; align-items:flex-end; gap:2em;">
   <div>
     <div style="display:flex; align-items:center; justify-content:center; gap:0.1em; font-size:0.75em;">
       <span data-id="t">$\mathcal T$: </span>
@@ -330,12 +329,12 @@ All barcodes coincide.
       <span data-id="a2">$\rightarrow$</span>
       <img data-id="torus" src='assets/torus.svg' style="width:5em;"/>
     </div>
-    <div data-id="d1">
+    <div data-id="d1" style="font-size:0.9em;">
       $$
       \begin{array}{ccccc}
       T_1 & \xrightarrow{} & T_2 & \xrightarrow{} & T_3\\
       \downarrow & & \downarrow &  & \downarrow \\
-      H_1(T_1) & \xrightarrow{} & H_1(T_2) & \xrightarrow{} & H_1(T_3)\\
+      H_1(T_1, \mathbb k) & \xrightarrow{} & H_1(T_2, \mathbb k) & \xrightarrow{} & H_1(T_3, \mathbb k)\\
       \end{array}
       $$
     </div>
@@ -350,12 +349,12 @@ All barcodes coincide.
       <span data-id="a4">$\rightarrow$</span>
       <img data-id="sphere" src='assets/sphere.svg' style="width:5em;"/>
     </div>
-    <div data-id="d2">
+    <div data-id="d2" style="font-size:0.9em;">
       $$
       \begin{array}{ccccc}
       X_1 & \xrightarrow{} & X_2 & \xrightarrow{} & X_3\\
       \downarrow & & \downarrow &  & \downarrow \\
-      H_1(X_1) & \xrightarrow{} & H_1(X_2) & \xrightarrow{} & H_1(X_3)\\
+      H_1(X_1, \mathbb k) & \xrightarrow{} & H_1(X_2, \mathbb k) & \xrightarrow{} & H_1(X_3, \mathbb k)\\
       \end{array}
       $$
       </div>
@@ -386,7 +385,7 @@ All barcodes coincide.
   </div>
 </div>
 
-**Convention**: All spaces are path-conected and contain a common base point.
+**Convention**: All spaces are path-connected and contain a common basepoint.
 
 ---
 
@@ -504,9 +503,9 @@ All barcodes coincide.
 
 ***Efficient computation***: Using <span style="color:#2EC27E"><b>discrete Morse theory</b></span> to obtain a reduced presentation.
 
-Let $ K $ be a regular CW complex and let $ M $ be an acyclic matching on the cells of K.
+Let $ K $ be a regular CW complex and let $ M $ be an <span style="color:#2EC27E"><b>acyclic matching</b></span> on the cells of K.
 
->**Theorem (Forman, 1995; Chari 2000)**: $ K $ is homotopy equivalent to a CW complex with exactly one cell of dimension $ p $ for each critical (ie., unmatched) cell of dimension $ p $.
+>**Theorem (Forman, 1995; Chari 2000)**: $ K $ is homotopy equivalent to a CW complex with exactly one cell of dimension $ p $ for <span style="color:#2EC27E"><b>each critical</b></span> (i.e., unmatched) cell of dimension $ p $.
 
 ---
 
@@ -519,8 +518,8 @@ Let $ K $ be a regular CW complex and let $ M $ be an acyclic matching on the ce
 
 ***Efficient computation***: Using <span style="color:#2EC27E"><b>discrete Morse theory</b></span> to obtain a reduced presentation.
 
-Let $ K $ be a regular CW complex and let $ M $ be an acyclic matching on the cells of K \
-with only one 0-dimensional critic cell.
+Let $ K $ be a regular CW complex and let $ M $ be an acyclic matching \
+(with exactly one critical 0-cell).
 
 >**Theorem (Fernández, 2024)**: A presentation $\mathcal P = \langle X \mid R \rangle $ of $ \pi_1(K) $ with
 $$\\# X = \\# 1\text{-dim critical cells}$$
@@ -691,8 +690,10 @@ $$
 
 ***Efficient computation***: Perform a <span style="color:#2EC27E"><b>single computation</b></span>  over the whole filtration.
 
-<blockquote>
-<b>Theorem (Fernández, O., 2026)</b>: Let $ M_\bullet $ be an acyclic matching with only one 0-dim critical cell over $K_\bullet$. Presentations $ \mathcal P_i = \langle X_i \mid R_i \rangle $ of $ \pi_1(K_i) $ with
+<blockquote style="font-size:0.8em;">
+<b>Theorem (Fernández, O., 2026)</b>: Let $ K_\bullet $ be a based filtration of finite regular CW complexes and let $ M_\bullet $ be a filtration compatible acyclic matching with exactly one critical 0-cell at each level. We can compute presentations
+
+$$ \mathcal P_i = \langle X_i \mid R_i \rangle \cong \pi_1(K_i) \text{ with} $$ 
 <div>
 $$
 \begin{array}{c}
@@ -701,7 +702,7 @@ $$
 \end{array}
 $$
 </div>
-and morphisms $ \psi_{i\to j}: \mathcal P_i \to \mathcal P_j $ such that the following commutes 
+and compatible morphisms $ \psi_{i\to j}: \mathcal P_i \to \mathcal P_j $ such that
 <div>
 $$
 \begin{array}{ccc}
@@ -711,7 +712,7 @@ K_i & \hookrightarrow{} & K_j \\
 \end{array}
 $$
 </div>
-can be computed in $ \mathcal O(N^2) $, $ N = \#$ cells in the 2-skeleton of $K$.
+commutes, in time $ \mathcal O(N^2) $, $ N = \#$ cells in the 2-skeleton of $K_n$.
 </blockquote>
 
 ---
@@ -1131,7 +1132,7 @@ $$ lcq_n(G) := \frac{\gamma_n(G)}{\gamma_{n+1}(G)}. $$
 </div>
 <div data-id="l2">
 $$
-lcq_1(G) = \frac{G}{[G, G]} \cong H_1(K),
+lcq_1(G) = \frac{G}{[G, G]} \cong H_1(K, \mathbb k),
 $$
 $$
 lcq_2(G) = \frac{[G, G]}{[[G, G], G]},
@@ -1160,7 +1161,7 @@ $$
   lcq_2 (F_n) \cong \mathbb Z^{\binom{n}{2}},
 $$
 $$
-  lcq_2 (F_n) \cong \mathbb Z^{n\binom{n}{2} - \binom{n}{3}}.
+  lcq_3 (F_n) \cong \mathbb Z^{n\binom{n}{2} - \binom{n}{3}}.
 $$
 </div>
 
@@ -1184,7 +1185,15 @@ $$
 $$
 </div>
 
+$lcq_n$ measures <span style="color:#2EC27E">$n$-fold commutativity</span> features.
+
+---
+
+<!-- .slide: data-auto-animate -->
+### Lower central quotients
+
 >For every $ n $, $ lcq_n(G) $ <span style="color:#2EC27E">is abelian</span>.
+
 
 ---
 
@@ -1210,22 +1219,22 @@ $$
 
 ---
 <!-- .slide: data-auto-animate -->
-### Persistent Lower central quotients
+### <span style="color:#2EC27E">Persistent</span> lower central quotients
 
 ---
 
 <!-- .slide: data-auto-animate -->
-### Persistent Lower central quotients
+### <span style="color:#2EC27E">Persistent</span> lower central quotients
 
->**Definition**: Let $\mathbb K $ a fixed field. We define the <span style="color:#2EC27E"><b> $\mathbb K $-tensored $n^\text{th}$-lower central quotient </b> </span> as
+>**Definition**: Let $\mathbb k $ a fixed field. We define the <span style="color:#2EC27E"><b> $\mathbb k $-tensored $n^\text{th}$-lower central quotient </b> </span> as
 $$
-  lcq_n^{\mathbb K} := lcq_n \otimes_{\mathbb Z} \mathbb K
+  lcq_n^{\mathbb k} := lcq_n \otimes_{\mathbb Z} \mathbb k
 $$
 
 ---
 
 <!-- .slide: data-auto-animate -->
-### Persistent lower central quotients
+### <span style="color:#2EC27E">Persistent</span> lower central quotients
 
 <div data-id="d1">
 $$
@@ -1234,7 +1243,24 @@ K_1 & \xrightarrow{} & K_2 & \xrightarrow{} & \dots \xrightarrow{} & K_n\\
 \downarrow & & \downarrow &  &   & \downarrow\\
 \pi_1(K_1) & \xrightarrow{} & \pi_1(K_2) & \xrightarrow{} & \dots \xrightarrow{} & \pi_1(K_n)\\
 \downarrow \scriptstyle{\xi_1} & & \downarrow \scriptstyle{\xi_2} &  &   & \downarrow \scriptstyle{\xi_n}\\
-lcq_n^{\mathbb K}(\pi_1(K_1)) & \xrightarrow{} & lcq_n^{\mathbb K}(\pi_1(K_2)) & \xrightarrow{} & \dots \xrightarrow{} & lcq_n^{\mathbb K}(\pi_1(K_n))\\
+lcq_n^{\mathbb k}(\pi_1(K_1)) & \xrightarrow{} & lcq_n^{\mathbb k}(\pi_1(K_2)) & \xrightarrow{} & \dots \xrightarrow{} & lcq_n^{\mathbb k}(\pi_1(K_n))\\
+\end{array}
+$$
+</div>
+
+---
+
+<!-- .slide: data-auto-animate -->
+### <span style="color:#2EC27E">Persistent</span> lower central quotients
+
+<div data-id="d1">
+$$
+\begin{array}{ccccccc}
+K_1 & \xrightarrow{} & K_2 & \xrightarrow{} & \dots \xrightarrow{} & K_n\\
+\downarrow & & \downarrow &  &   & \downarrow\\
+\pi_1(K_1) & \xrightarrow{} & \pi_1(K_2) & \xrightarrow{} & \dots \xrightarrow{} & \pi_1(K_n)\\
+\downarrow \scriptstyle{\xi_1} & & \downarrow \scriptstyle{\xi_2} &  &   & \downarrow \scriptstyle{\xi_n}\\
+lcq_n^{\mathbb k}(\pi_1(K_1)) & \xrightarrow{} & lcq_n^{\mathbb k}(\pi_1(K_2)) & \xrightarrow{} & \dots \xrightarrow{} & lcq_n^{\mathbb k}(\pi_1(K_n))\\
 \end{array}
 $$
 </div>
@@ -1243,40 +1269,39 @@ Here we obtain a functor
 <div>
 $$
   \begin{align*}
-    \xi_\alpha : &\bold{Grp} \to \bold{Vect}_{\mathbb K} \\
-    & G \mapsto \frac{\gamma_n(G)}{\gamma_{n+1}(G)} \otimes_{\mathbb Z} \mathbb K
+    \xi : &\bold{Grp} \to \bold{Vect}_{\mathbb k} \\
+    & G \mapsto \frac{\gamma_n(G)}{\gamma_{n+1}(G)} \otimes_{\mathbb Z} \mathbb k
   \end{align*}
 $$
 </div>
 
-
 ---
 
 <!-- .slide: data-auto-animate -->
-### Persistent lower central quotients
+### <span style="color:#2EC27E">Persistent</span> lower central quotients
 <div data-id="o">
 Every $ lcq_n(\pi_1(K_\alpha)) $ is abelian so
 $$
 \begin{array}{ccccccc}
-lcq_n^{\mathbb K}(\pi_1(K_1)) & \xrightarrow{} & lcq_n^{\mathbb K}(\pi_1(K_2)) & \xrightarrow{} & \dots \xrightarrow{} & lcq_n^{\mathbb K}(\pi_1(K_n))\\
+lcq_n^{\mathbb k}(\pi_1(K_1)) & \xrightarrow{} & lcq_n^{\mathbb k}(\pi_1(K_2)) & \xrightarrow{} & \dots \xrightarrow{} & lcq_n^{\mathbb k}(\pi_1(K_n))\\
 \end{array}
 $$
-is a <span style="color:#2EC27E"><b>persistent module</b></span> over the field $ \mathbb K $ (ie. a graded $ \mathbb K [t] $-module).
+is a <span style="color:#2EC27E"><b>persistent module</b></span> over the field $ \mathbb k $ (ie. a graded $ \mathbb k [t] $-module).
 </div>
 
 ---
 
 <!-- .slide: data-auto-animate -->
-### Persistent lower central quotients
+### <span style="color:#2EC27E">Persistent</span> lower central quotients
 
 <div data-id="o">
 Every $ lcq_n(\pi_1(K_\alpha)) $ is abelian so
 $$
 \begin{array}{ccccccc}
-lcq_n^{\mathbb K}(\pi_1(K_1)) & \xrightarrow{} & lcq_n^{\mathbb K}(\pi_1(K_2)) & \xrightarrow{} & \dots \xrightarrow{} & lcq_n^{\mathbb K}(\pi_1(K_n))\\
+lcq_n^{\mathbb k}(\pi_1(K_1)) & \xrightarrow{} & lcq_n^{\mathbb k}(\pi_1(K_2)) & \xrightarrow{} & \dots \xrightarrow{} & lcq_n^{\mathbb k}(\pi_1(K_n))\\
 \end{array}
 $$
-is a <span style="color:#2EC27E"><b>persistent module</b></span> over the field $ \mathbb K $ (ie. a graded $ \mathbb K [t] $-module).
+is a <span style="color:#2EC27E"><b>persistent module</b></span> over the field $ \mathbb k $ (ie. a graded $ \mathbb k [t] $-module).
 </div>
 
 >We can compute <span style="color:#2EC27E"><b>barcodes</b></span>.
@@ -1285,7 +1310,7 @@ is a <span style="color:#2EC27E"><b>persistent module</b></span> over the field 
 ---
 
 <!-- .slide: data-auto-animate -->
-### Lower central quotients
+### <span style="color:#2EC27E">Persistent</span> lower central quotients
 
 <div style="display:flex; justify-content:center; align-items:flex-end; gap:2em;">
 <div>
@@ -1303,8 +1328,8 @@ is a <span style="color:#2EC27E"><b>persistent module</b></span> over the field 
   T_1 & \xrightarrow{} & T_2 & \xrightarrow{} & T_3\\
   \downarrow\scriptstyle{\pi_1} & & \downarrow\scriptstyle{\pi_1} &  & \downarrow\scriptstyle{\pi_1} \\
   \mathbb Z & \xrightarrow{} & \mathbb Z * \mathbb Z & \xrightarrow{} & \mathbb Z \oplus \mathbb Z\\
-  \downarrow\scriptstyle{lcq_2^{\mathbb K}} & & \downarrow\scriptstyle{lcq_2^{\mathbb K}} & & \downarrow\scriptstyle{lcq_2^{\mathbb K}} \\
-  0 & \xrightarrow{} & \mathbb K & \xrightarrow{} & 0\\
+  \downarrow\scriptstyle{lcq_2^{\mathbb k}} & & \downarrow\scriptstyle{lcq_2^{\mathbb k}} & & \downarrow\scriptstyle{lcq_2^{\mathbb k}} \\
+  0 & \xrightarrow{} & \mathbb k & \xrightarrow{} & 0\\
   \end{array}
   $$
   </div>
@@ -1326,8 +1351,8 @@ is a <span style="color:#2EC27E"><b>persistent module</b></span> over the field 
   X_1 & \xrightarrow{} & X_2 & \xrightarrow{} & X_3\\
   \downarrow\scriptstyle{\pi_1} & & \downarrow\scriptstyle{\pi_1} &  & \downarrow\scriptstyle{\pi_1} \\
   \mathbb Z & \xrightarrow{} & \mathbb Z * \mathbb Z & \xrightarrow{} & \mathbb Z * \mathbb Z\\
-  \downarrow\scriptstyle{lcq_2^{\mathbb K}} & & \downarrow\scriptstyle{lcq_2^{\mathbb K}} &  & \downarrow\scriptstyle{lcq_2^{\mathbb K}} \\
-  0 & \xrightarrow{} & \mathbb K  & \xrightarrow{} & \mathbb K\\
+  \downarrow\scriptstyle{lcq_2^{\mathbb k}} & & \downarrow\scriptstyle{lcq_2^{\mathbb k}} &  & \downarrow\scriptstyle{lcq_2^{\mathbb k}} \\
+  0 & \xrightarrow{} & \mathbb k  & \xrightarrow{} & \mathbb k\\
   \end{array}
   $$
   </div>
@@ -1338,7 +1363,7 @@ is a <span style="color:#2EC27E"><b>persistent module</b></span> over the field 
 ---
 
 <!-- .slide: data-auto-animate -->
-### Lower central quotients
+### <span style="color:#2EC27E">Persistent</span> lower central quotients
 **Example:** $lcq_n$ barcodes of links.
 
 <div style="display:flex; align-items:center; justify-content:center; gap:0.5em;">
@@ -1362,7 +1387,7 @@ is a <span style="color:#2EC27E"><b>persistent module</b></span> over the field 
 </div>
 
 <div style="display:flex; align-items:center; justify-content:center; gap:0.5em;">
-  Baromean rings
+  Barromean rings
   <span data-id="r">$\mathcal R$:</span>
   <img src='assets/borromean-3.svg'/>
   <span data-id="arrow1">$\rightarrow$</span>
@@ -1436,7 +1461,7 @@ $$
 
 <!-- .slide: data-auto-animate -->
 
-**Example:** $lcq_n$ barcodes of links. **($lcq_1^{\mathbb K}$)**
+**Example:** $lcq_n$ barcodes of links. **($lcq_1^{\mathbb k}$)**
 
 <div style="display:flex; justify-content:center; align-items:flex-end; gap:1em;">
   <div>
@@ -1453,7 +1478,7 @@ $$
       \begin{array}{ccccc}
       \mathbb R^3 \setminus U_1 & \xrightarrow{} & \mathbb R^3 \setminus U_2 & \xrightarrow{} & \mathbb R^3 \setminus U_3\\
       \downarrow\scriptstyle{H_1} & & \downarrow\scriptstyle{H_1} &  & \downarrow\scriptstyle{H_1} \\
-      \mathbb K^3 & \xrightarrow{} & \mathbb K^2 & \xrightarrow{} & \mathbb K\\
+      \mathbb k^3 & \xrightarrow{} & \mathbb k^2 & \xrightarrow{} & \mathbb k\\
       \end{array}
       $$
     </div>
@@ -1472,7 +1497,7 @@ $$
       \begin{array}{ccccc}
       \mathbb R^3 \setminus L_1 & \xrightarrow{} & \mathbb R^3 \setminus L_2 & \xrightarrow{} & \mathbb R^3 \setminus L_3\\
       \downarrow\scriptstyle{H_1} & & \downarrow\scriptstyle{H_1} &  & \downarrow\scriptstyle{H_1} \\
-      \mathbb K^3 & \xrightarrow{} & \mathbb K^2 & \xrightarrow{} & \mathbb K\\
+      \mathbb k^3 & \xrightarrow{} & \mathbb k^2 & \xrightarrow{} & \mathbb k\\
       \end{array}
       $$
     </div>
@@ -1492,7 +1517,7 @@ $$
     \begin{array}{ccccc}
     \mathbb R^3 \setminus R_1 & \xrightarrow{} & \mathbb R^3 \setminus R_2 & \xrightarrow{} & \mathbb R^3 \setminus R_3\\
     \downarrow\scriptstyle{H_1} & & \downarrow\scriptstyle{H_1} &  & \downarrow\scriptstyle{H_1} \\
-    \mathbb K^3 & \xrightarrow{} & \mathbb K^2 & \xrightarrow{} & \mathbb K\\
+    \mathbb k^3 & \xrightarrow{} & \mathbb k^2 & \xrightarrow{} & \mathbb k\\
     \end{array}
     $$
   </div>
@@ -1501,7 +1526,7 @@ $$
 ---
 
 <!-- .slide: data-auto-animate -->
-**Example:** $lcq_n$ barcodes of links. **($lcq_1^{\mathbb K}$)**
+**Example:** $lcq_n$ barcodes of links. **($lcq_1^{\mathbb k}$)**
 
 <div style="display:flex; align-items:center; justify-content:center; gap:2em;">
   <div>
@@ -1543,7 +1568,7 @@ $$
 
 <!-- .slide: data-auto-animate -->
 
-**Example:** $lcq_n$ barcodes of links. **($lcq_2^{\mathbb K}$)**
+**Example:** $lcq_n$ barcodes of links. **($lcq_2^{\mathbb k}$)**
 
 <div style="display:flex; justify-content:center; align-items:flex-end; gap:1em;">
   <div>
@@ -1559,8 +1584,8 @@ $$
       $$
       \begin{array}{ccccc}
       \mathbb R^3 \setminus U_1 & \xrightarrow{} & \mathbb R^3 \setminus U_2 & \xrightarrow{} & \mathbb R^3 \setminus U_3\\
-      \downarrow\scriptstyle{lcq_2^{\mathbb K}} & & \downarrow\scriptstyle{lcq_2^{\mathbb K}} &  & \downarrow\scriptstyle{lcq_2^{\mathbb K}} \\
-      \mathbb K^3 & \xrightarrow{} & \mathbb K & \xrightarrow{} & 0\\
+      \downarrow\scriptstyle{lcq_2^{\mathbb k}} & & \downarrow\scriptstyle{lcq_2^{\mathbb k}} &  & \downarrow\scriptstyle{lcq_2^{\mathbb k}} \\
+      \mathbb k^3 & \xrightarrow{} & \mathbb k & \xrightarrow{} & 0\\
       \end{array}
       $$
     </div>
@@ -1578,8 +1603,8 @@ $$
     $$
     \begin{array}{ccccc}
     \mathbb R^3 \setminus L_1 & \xrightarrow{} & \mathbb R^3 \setminus L_2 & \xrightarrow{} & \mathbb R^3 \setminus L_3\\
-    \downarrow\scriptstyle{lcq_2^{\mathbb K}} & & \downarrow\scriptstyle{lcq_2^{\mathbb K}} &  & \downarrow\scriptstyle{lcq_2^{\mathbb K}} \\
-    \mathbb K & \xrightarrow{} & 0 & \xrightarrow{} & 0\\
+    \downarrow\scriptstyle{lcq_2^{\mathbb k}} & & \downarrow\scriptstyle{lcq_2^{\mathbb k}} &  & \downarrow\scriptstyle{lcq_2^{\mathbb k}} \\
+    \mathbb k & \xrightarrow{} & 0 & \xrightarrow{} & 0\\
     \end{array}
     $$
     </div>
@@ -1599,8 +1624,8 @@ $$
     $$
     \begin{array}{ccccc}
     \mathbb R^3 \setminus R_1 & \xrightarrow{} & \mathbb R^3 \setminus R_2 & \xrightarrow{} & \mathbb R^3 \setminus R_3\\
-    \downarrow\scriptstyle{lcq_2^{\mathbb K}} & & \downarrow\scriptstyle{lcq_2^{\mathbb K}} &  & \downarrow\scriptstyle{lcq_2^{\mathbb K}} \\
-    \mathbb K^3 & \xrightarrow{} & \mathbb K & \xrightarrow{} & 0\\
+    \downarrow\scriptstyle{lcq_2^{\mathbb k}} & & \downarrow\scriptstyle{lcq_2^{\mathbb k}} &  & \downarrow\scriptstyle{lcq_2^{\mathbb k}} \\
+    \mathbb k^3 & \xrightarrow{} & \mathbb k & \xrightarrow{} & 0\\
     \end{array}
     $$
   </div>
@@ -1609,7 +1634,7 @@ $$
 ---
 
 <!-- .slide: data-auto-animate -->
-**Example:** $lcq_n$ barcodes of links. **($lcq_2^{\mathbb K}$)**
+**Example:** $lcq_n$ barcodes of links. **($lcq_2^{\mathbb k}$)**
 
 <div style="display:flex; align-items:center; justify-content:center; gap:2em;">
   <div>
@@ -1650,7 +1675,7 @@ $$
 ---
 
 <!-- .slide: data-auto-animate -->
-**Example:** $lcq_n$ barcodes of links. **($lcq_3^{\mathbb K}$)**
+**Example:** $lcq_n$ barcodes of links. **($lcq_3^{\mathbb k}$)**
 
 <div style="display:flex; justify-content:center; align-items:flex-end; gap:1em;">
   <div>
@@ -1666,8 +1691,8 @@ $$
       $$
       \begin{array}{ccccc}
       \mathbb R^3 \setminus U_1 & \xrightarrow{} & \mathbb R^3 \setminus U_2 & \xrightarrow{} & \mathbb R^3 \setminus U_3\\
-      \downarrow\scriptstyle{lcq_3^{\mathbb K}} & & \downarrow\scriptstyle{lcq_3^{\mathbb K}} &  & \downarrow\scriptstyle{lcq_3^{\mathbb K}} \\
-      \mathbb K^8 & \xrightarrow{} & \mathbb K^2 & \xrightarrow{} & 0\\
+      \downarrow\scriptstyle{lcq_3^{\mathbb k}} & & \downarrow\scriptstyle{lcq_3^{\mathbb k}} &  & \downarrow\scriptstyle{lcq_3^{\mathbb k}} \\
+      \mathbb k^8 & \xrightarrow{} & \mathbb k^2 & \xrightarrow{} & 0\\
       \end{array}
       $$
     </div>
@@ -1685,8 +1710,8 @@ $$
       $$
       \begin{array}{ccccc}
       \mathbb R^3 \setminus L_1 & \xrightarrow{} & \mathbb R^3 \setminus L_2 & \xrightarrow{} & \mathbb R^3 \setminus L_3\\
-      \downarrow\scriptstyle{lcq_3^{\mathbb K}} & & \downarrow\scriptstyle{lcq_3^{\mathbb K}} &  & \downarrow\scriptstyle{lcq_3^{\mathbb K}} \\
-      \mathbb K^2 & \xrightarrow{} & 0 & \xrightarrow{} & 0\\
+      \downarrow\scriptstyle{lcq_3^{\mathbb k}} & & \downarrow\scriptstyle{lcq_3^{\mathbb k}} &  & \downarrow\scriptstyle{lcq_3^{\mathbb k}} \\
+      \mathbb k^2 & \xrightarrow{} & 0 & \xrightarrow{} & 0\\
       \end{array}
       $$
     </div>
@@ -1706,8 +1731,8 @@ $$
     $$
     \begin{array}{ccccc}
     \mathbb R^3 \setminus R_1 & \xrightarrow{} & \mathbb R^3 \setminus R_2 & \xrightarrow{} & \mathbb R^3 \setminus R_3\\
-    \downarrow\scriptstyle{lcq_3^{\mathbb K}} & & \downarrow\scriptstyle{lcq_3^{\mathbb K}} &  & \downarrow\scriptstyle{lcq_3^{\mathbb K}} \\
-    \mathbb K^6 & \xrightarrow{} & \mathbb K^2 & \xrightarrow{} & 0\\
+    \downarrow\scriptstyle{lcq_3^{\mathbb k}} & & \downarrow\scriptstyle{lcq_3^{\mathbb k}} &  & \downarrow\scriptstyle{lcq_3^{\mathbb k}} \\
+    \mathbb k^6 & \xrightarrow{} & \mathbb k^2 & \xrightarrow{} & 0\\
     \end{array}
     $$
   </div>
@@ -1716,7 +1741,7 @@ $$
 ---
 
 <!-- .slide: data-auto-animate -->
-**Example:** $lcq_n$ barcodes of links. **($lcq_3^{\mathbb K}$)**
+**Example:** $lcq_n$ barcodes of links. **($lcq_3^{\mathbb k}$)**
 
 <div style="display:flex; align-items:center; justify-content:center; gap:2em;">
   <div>
@@ -1776,25 +1801,39 @@ Using GAP 4 NQ Package **(Nickel, 2007)**.
 
 <!-- .slide: data-auto-animate -->
 ### Summary
-- <span style="color:#2EC27E"><b>$ PH_* $ has limitations</b></span> to distinguish certain kinds of filtrations.
+- <span style="color:#2EC27E"><b>Persistent $ H_1 $ </b></span> detects when cycles appear and disappear,
+but it <span style="color:#2EC27E"><b>forgets</b></span> their <span style="color:#2EC27E"><b>non-commutative structure</b></span>.
 
 ---
 
 <!-- .slide: data-auto-animate -->
 ### Summary
-- <span style="color:#2EC27E"><b>$ PH_* $ has limitations</b></span> to distinguish certain kinds of filtrations.
-  
-- We have design an <span style="color:#2EC27E"><b> eficient algorithm to compute $P\pi_1$</b></span> presentations.
+- <span style="color:#2EC27E"><b>Persistent $ H_1 $ </b></span> detects when cycles appear and disappear,
+but it <span style="color:#2EC27E"><b>forgets</b></span> their <span style="color:#2EC27E"><b>non-commutative structure</b></span>.
+- We designed an <span style="color:#2EC27E"><b> efficient algorithm to compute persistent $\pi_1$</b></span> presentations (and morphisms).
 
 ---
 
 <!-- .slide: data-auto-animate -->
 ### Summary
-- <span style="color:#2EC27E"><b>$ PH_* $ has limitations</b></span> to distinguish certain kinds of filtrations.
-  
-- We have design an <span style="color:#2EC27E"><b> eficient algorithm to compute $P\pi_1$</b></span> presentations.
-  
-- We found a way of <span style="color:#2EC27E"><b>computing $P\pi_1$ barcodes</b></span> using $ lcq_n $.
+- <span style="color:#2EC27E"><b>Persistent $ H_1 $ </b></span> detects when cycles appear and disappear,
+but it <span style="color:#2EC27E"><b>forgets</b></span> their <span style="color:#2EC27E"><b>non-commutative structure</b></span>.
+- We designed an <span style="color:#2EC27E"><b> efficient algorithm to compute persistent $\pi_1$</b></span> presentations (and morphisms).
+- We constructed <span style="color:#2EC27E"><b>lower central quotient barcodes</b></span> for persistent $\pi_1$.
+
+---
+
+<!-- .slide: data-auto-animate -->
+### Summary
+- <span style="color:#2EC27E"><b>Persistent $ H_1 $ </b></span> detects when cycles appear and disappear,
+but it <span style="color:#2EC27E"><b>forgets</b></span> their <span style="color:#2EC27E"><b>non-commutative structure</b></span>.
+- We designed an <span style="color:#2EC27E"><b> efficient algorithm to compute persistent $\pi_1$</b></span> presentations (and morphisms).
+- We constructed <span style="color:#2EC27E"><b>lower central quotient barcodes</b></span> for persistent $\pi_1$.
+- This invariant retains <span style="color:#2EC27E"><b>non-commutative information</b></span> from persistent $\pi_1$.
+
+$$
+  \pi_1 \mathrel{\leadsto} lcq_n \mathrel{\leadsto} lcq_n^{\mathbb k} \mathrel{\leadsto} \text{Barcodes}
+$$
 
 ---
 
@@ -1809,7 +1848,6 @@ Using GAP 4 NQ Package **(Nickel, 2007)**.
 ### Ongoing and future work
 
 - Look for a computationally <span style="color:#2EC27E"><b>efficient algorithm to compute $ lcq_n(G) $</b></span>.
-
 - Apply the methods to <span style="color:#2EC27E"><b>metric spaces</b></span> and <span style="color:#2EC27E"><b>real data</b></span>.
 
 ---
@@ -1818,22 +1856,22 @@ Using GAP 4 NQ Package **(Nickel, 2007)**.
 ### Ongoing and future work
 
 - Look for a computationally <span style="color:#2EC27E"><b>efficient algorithm to compute $ lcq_n(G) $</b></span>.
-
 - Apply the methods to <span style="color:#2EC27E"><b>metric spaces</b></span> and <span style="color:#2EC27E"><b>real data</b></span>.
-
-- Explore for <span style="color:#2EC27E"><b>abelian invariants</b></span> beyond $ lcq_n $.
+- Explore <span style="color:#2EC27E"><b>abelian invariants</b></span> beyond $ lcq_n $.
 
 ---
 
 ### References
 
-- <span style="color:#2EC27E"><b>Robin Forman</b></span>. Morse theory for cell complexes. *Advances in Mathathematics*, 1998.
+- <span style="color:#2EC27E"><b>M. K. Chari</b></span> **On discrete Morse functions and combinatorial descompositions**. *discrete Mathematics, 2000.
 
-- <span style="color:#2EC27E"><b>Ximena Fernández</b></span>. Morse theory for group presentations. *Transactions of the American Mathematical Society*, 2024.
+- <span style="color:#2EC27E"><b>Robin Forman</b></span>. **Morse theory for cell complexes**. *Advances in Mathematics*, 1998.
 
-- <span style="color:#2EC27E"><b>Charles C. Sims</b></span>. Computation with finitely presented groups. *Cambridge University Press*, 1994.
+- <span style="color:#2EC27E"><b>Ximena Fernández</b></span>. **Morse theory for group presentations**. *Transactions of the American Mathematical Society*, 2024.
 
-- <span style="color:#2EC27E"><b>Primoz Skraba</b></span> and <span style="color:#2EC27E"><b>Mikael Vejdemo-Johansson</b></span>. Persistence modules: Algebra and algorithms.
+- <span style="color:#2EC27E"><b>Charles C. Sims</b></span>. **Computation with finitely presented groups**. *Cambridge University Press*, 1994.
+
+- <span style="color:#2EC27E"><b>Primoz Skraba</b></span> and <span style="color:#2EC27E"><b>Mikael Vejdemo-Johansson</b></span>. **Persistence modules: Algebra and algorithms**.
   *Mathematics of Computation*, 2013.
 
-- <span style="color:#2EC27E"><b>Werner Nickel</b></span>. A gap 4 package computing nilpotent factor groups of finitely presented groups. *GAP 4 Package*, 2007.
+- <span style="color:#2EC27E"><b>Werner Nickel</b></span>. **A gap 4 package computing nilpotent factor groups of finitely presented groups**. *GAP 4 Package*, 2007.
