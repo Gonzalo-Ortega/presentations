@@ -1132,7 +1132,7 @@ $$ lcq_n(G) := \frac{\gamma_n(G)}{\gamma_{n+1}(G)}. $$
 </div>
 <div data-id="l2">
 $$
-lcq_1(G) = \frac{G}{[G, G]} \cong H_1(K, \mathbb k),
+lcq_1(G) = \frac{G}{[G, G]} \cong H_1(K),
 $$
 $$
 lcq_2(G) = \frac{[G, G]}{[[G, G], G]},
