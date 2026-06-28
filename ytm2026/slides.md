@@ -477,7 +477,7 @@ All barcodes coincide.
 ***Naive computation***: Using the <span style="color:#2EC27E"><b>spanning tree</b></span> algorithm.
 
 <img data-id="torus" width=500 src='assets/tree-torus.svg'/>
-<div data-id="label">$$ T \cong \langle e_2, e_4, e_5, e_7, e_8 \mid e_5, \ e_2^{-1} e_7, e_5^{-1}, \ e_7^{-1} e_4^{-1} e_2 e_8, \ e_8^{-1} e_4 \rangle$$</div>
+<div data-id="label">$$ \pi_1(T) \cong \langle e_2, e_4, e_5, e_7, e_8 \mid e_5, \ e_2^{-1} e_7, e_5^{-1}, \ e_7^{-1} e_4^{-1} e_2 e_8, \ e_8^{-1} e_4 \rangle$$</div>
 
 ---
 
@@ -582,7 +582,7 @@ $$N = \\# \text{cells in the 2-skeleton of } K.$$
 ***Efficient computation***: Using <span style="color:#2EC27E"><b>discrete Morse theory</b></span> to obtain a reduced presentation.
 
 <img data-id="torus" height=500 src='assets/matching-torus-3.svg'/>
-<div data-id="label">$$ T \cong \langle e_2, e_4 \mid e_2^{-1} e_4^{-1} e_2 e_4 \rangle$$</div>
+<div data-id="label">$$ \pi_1(T) \cong \langle e_2, e_4 \mid e_2^{-1} e_4^{-1} e_2 e_4 \rangle$$</div>
 
 ---
 
@@ -1863,7 +1863,7 @@ $$
 
 ### References
 
-- <span style="color:#2EC27E"><b>M. K. Chari</b></span> **On discrete Morse functions and combinatorial descompositions**. *discrete Mathematics, 2000.
+- <span style="color:#2EC27E"><b>M. K. Chari</b></span> **On discrete Morse functions and combinatorial decompositions**. *Discrete Mathematics*, 2000.
 
 - <span style="color:#2EC27E"><b>Robin Forman</b></span>. **Morse theory for cell complexes**. *Advances in Mathematics*, 1998.
 
